@@ -6,131 +6,257 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243">
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#AnticancerMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LocalTherapyMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Protocol"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SupportiveTherapyMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Suppotive_therapy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cycle"/>
+        <ObjectProperty IRI="/0000185"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/0000074"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000076"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000078"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000084"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000087"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000088"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000089"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000090"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000095"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000097"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000100"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000101"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000109"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000115"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000117"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000118"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000119"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000133"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000134"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000135"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000136"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000137"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000138"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000139"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000140"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000141"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000142"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000143"/>
+        <NamedIndividual IRI="/0000209"/>
     </Declaration>
     <Declaration>
         <Class IRI="/0000150"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/0000153"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000155"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/0000162"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAnticancerMedication"/>
+        <Class IRI="/0000231"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000089"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000121"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000134"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000145"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000163"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000215"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000227"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000183"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000118"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000195"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000129"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000212"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000184"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000208"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000128"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000116"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000144"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000078"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000220"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000132"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000232"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000156"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000135"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000216"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000228"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000194"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000119"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CytarabineAdministration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000211"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnticancerMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000098"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cytarabine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000239"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocalTherapyMedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000087"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000225"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocalTherapyMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000237"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRepetitions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000193"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000210"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cycle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000189"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000130"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDurationWeeks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EtoposideAdministration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000126"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000114"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000076"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000230"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000133"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000214"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000075"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000226"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000117"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000207"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000192"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDurationDays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000099"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000096"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000097"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000142"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000113"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000223"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000235"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000191"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000138"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000206"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000219"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000199"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
@@ -139,223 +265,166 @@
         <ObjectProperty IRI="#hasCourse"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDurationDays"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasDurationWeeks"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLocalTherapyMedication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLocalTherapyMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPhase"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSupportiveMedication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSupportiveMedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000077"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000094"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000096"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000098"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000110"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000113"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000114"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000116"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000120"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000121"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000122"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000124"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000125"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000126"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000128"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000129"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000130"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000132"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000144"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000145"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000146"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000151"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000156"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000184"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000185"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000205"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000206"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000207"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasRepetitions"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000075"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000099"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000152"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000154"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000163"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="/0000164"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#COG_AAML_1031"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Cytarabine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CytarabineAdministration"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Daunorubicin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#DuanorubicinAdministration"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Etoposide"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EtoposideAdministration"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000183"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000189"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000190"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000191"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000192"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000193"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000194"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000195"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000196"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000197"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000198"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000199"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000200"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000201"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000202"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000203"/>
+        <Class IRI="/0000090"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/0000204"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/0000208"/>
+        <Class IRI="#MedicationAdministration"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/0000209"/>
+        <NamedIndividual IRI="#COG_AAML_1031"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/0000210"/>
+        <Class IRI="/0000074"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/0000211"/>
+        <ObjectProperty IRI="#hasSupportiveMedication"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/0000212"/>
+        <ObjectProperty IRI="/0000205"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000143"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000155"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnticancerMedication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000124"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000224"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000190"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000236"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000139"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSupportiveMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportiveTherapyMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000203"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000154"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000094"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000140"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000095"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000221"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000136"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Etoposide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000217"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000229"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000197"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daunorubicin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DuanorubicinAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000084"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000141"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000153"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000122"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocalTherapyMedicationAdministration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000077"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000101"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000146"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000222"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000234"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000152"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000137"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/0000164"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000218"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000109"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000196"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/0000201"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="/0000115"/>
@@ -536,17 +605,24 @@
     <SubClassOf>
         <Class IRI="/0000119"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasPhase"/>
-            <Class IRI="/0000078"/>
+            <ObjectProperty IRI="/0000120"/>
+            <Class IRI="/0000117"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/0000119"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/0000239"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/0000133"/>
-        <Class IRI="#cycle"/>
+        <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000134"/>
-        <Class IRI="#cycle"/>
+        <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000136"/>
@@ -646,10 +722,260 @@
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <Class IRI="#Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000116"/>
+            <Class IRI="/0000216"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000116"/>
+            <Class IRI="/0000235"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000116"/>
+            <Class IRI="/0000236"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000116"/>
+            <Class IRI="/0000237"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000156"/>
+            <Class IRI="/0000215"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000207"/>
+            <Class IRI="/0000234"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000215"/>
+        <Class IRI="/0000155"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000216"/>
+        <Class IRI="/0000076"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000216"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="/0000232"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000217"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000218"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000219"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000220"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000220"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000184"/>
+            <Class IRI="/0000229"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000221"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000222"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000223"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000223"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000225"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000224"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000224"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000225"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000225"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000227"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000226"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000227"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000227"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000184"/>
+            <Class IRI="/0000228"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000228"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000228"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000184"/>
+            <Class IRI="/0000232"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000229"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000229"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000184"/>
+            <Class IRI="/0000232"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000230"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000230"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000232"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000231"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000232"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000232"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000228"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000232"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000185"/>
+            <Class IRI="/0000229"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000234"/>
+        <Class IRI="/0000097"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000235"/>
+        <Class IRI="/0000076"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000235"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="/0000232"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000236"/>
+        <Class IRI="/0000076"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000236"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="/0000228"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000237"/>
+        <Class IRI="/0000076"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000237"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="/0000228"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
         <Class IRI="/0000137"/>
         <Class IRI="/0000150"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/0000217"/>
+        <Class IRI="/0000218"/>
+        <Class IRI="/0000219"/>
+        <Class IRI="/0000220"/>
+        <Class IRI="/0000221"/>
+        <Class IRI="/0000222"/>
+        <Class IRI="/0000223"/>
+        <Class IRI="/0000224"/>
+        <Class IRI="/0000225"/>
+        <Class IRI="/0000226"/>
+        <Class IRI="/0000227"/>
+        <Class IRI="/0000228"/>
+        <Class IRI="/0000229"/>
+        <Class IRI="/0000230"/>
+        <Class IRI="/0000231"/>
+        <Class IRI="/0000232"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="/0000155"/>
@@ -928,7 +1254,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="/0000075"/>
         <NamedIndividual IRI="/0000183"/>
-        <Literal>10.3324/haematol.2019.220962</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">10.3324/haematol.2019.220962</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/0000099"/>
@@ -1080,10 +1406,6 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000146"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000151"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1303,509 +1625,628 @@
         <DataProperty IRI="/0000164"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/0000239"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Suppotive_therapy</IRI>
-        <Literal>SupportiveTherapy</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SupportiveTherapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#cycle</IRI>
-        <Literal>Cycle</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cycle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000074</IRI>
-        <Literal>flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000074</IRI>
-        <Literal xml:lang="en">Publication</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Publication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000075</IRI>
-        <Literal xml:lang="en">hasDOI</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDOI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000076</IRI>
-        <Literal xml:lang="en">Course</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Course</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000077</IRI>
-        <Literal xml:lang="en">hasPublication</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasPublication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000078</IRI>
-        <Literal xml:lang="en">Phase</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000084</IRI>
-        <Literal>which course - first second, third</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">which course - first second, third</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000084</IRI>
-        <Literal xml:lang="en">Regimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000087</IRI>
-        <Literal xml:lang="en">Chemotherapy</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chemotherapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000088</IRI>
-        <Literal xml:lang="en">CNS therapy, prophylaxis</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CNS therapy, prophylaxis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000089</IRI>
-        <Literal xml:lang="en">Glucocortisoid</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Glucocortisoid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000090</IRI>
-        <Literal xml:lang="en">Medication</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000094</IRI>
-        <Literal xml:lang="en">hasMedication</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMedication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000095</IRI>
-        <Literal>TBD  - modeling doses</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TBD  - modeling doses</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000095</IRI>
-        <Literal xml:lang="en">Dose</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dose</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000096</IRI>
-        <Literal xml:lang="en">hasDose</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDose</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000097</IRI>
-        <Literal>TBD - modeling specific biomarkers</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TBD - modeling specific biomarkers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000097</IRI>
-        <Literal xml:lang="en">Biomarker</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Biomarker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000098</IRI>
-        <Literal xml:lang="en">hasDuration</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDuration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000099</IRI>
-        <Literal xml:lang="en">hasDuration</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasDuration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000100</IRI>
-        <Literal xml:lang="en">Anticancer</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Anticancer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000101</IRI>
-        <Literal xml:lang="en">LocalTherapy</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LocalTherapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000109</IRI>
-        <Literal>As defined in Drummon, et al. Putting Owl In Order: Patterns for Sequences in OWL</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">As defined in Drummon, et al. Putting Owl In Order: Patterns for Sequences in OWL</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000109</IRI>
-        <Literal xml:lang="en">OWLList</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OWLList</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000110</IRI>
-        <Literal xml:lang="en">hasListProperty</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasListProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000113</IRI>
-        <Literal xml:lang="en">isFollowedBy</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isFollowedBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000114</IRI>
-        <Literal xml:lang="en">hasNext</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasNext</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000115</IRI>
-        <Literal xml:lang="en">EmptyList</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EmptyList</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000116</IRI>
-        <Literal xml:lang="en">hasRegimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000117</IRI>
-        <Literal xml:lang="en">Treatment</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000118</IRI>
-        <Literal xml:lang="en">Procedure</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Procedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000119</IRI>
-        <Literal xml:lang="en">TreatmentList</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TreatmentList</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000120</IRI>
-        <Literal xml:lang="en">hasTreatment</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasTreatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000121</IRI>
-        <Literal xml:lang="en">hasProcedure</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasProcedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000122</IRI>
-        <Literal xml:lang="en">hasTreatmentList</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasTreatmentList</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000124</IRI>
-        <Literal xml:lang="en">hasMedicationModality</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasMedicationModality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000125</IRI>
-        <Literal xml:lang="en">hasSystemicCancerIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSystemicCancerIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000126</IRI>
-        <Literal xml:lang="en">hasNonCancerIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasNonCancerIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000128</IRI>
-        <Literal xml:lang="en">hasSupportiveIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSupportiveIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000129</IRI>
-        <Literal xml:lang="en">hasAntiNeoPlasticIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasAntiNeoPlasticIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000130</IRI>
-        <Literal xml:lang="en">hasImmunoSuppressorIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasImmunoSuppressorIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000132</IRI>
-        <Literal xml:lang="en">hasProtocol</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasProtocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000133</IRI>
-        <Literal xml:lang="en">Indeterminate Regimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indeterminate Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000134</IRI>
-        <Literal xml:lang="en">Indefinite Regimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indefinite Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000135</IRI>
-        <Literal>the goal of a line of treatment</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the goal of a line of treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000135</IRI>
-        <Literal xml:lang="en">Intent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000136</IRI>
-        <Literal xml:lang="en">Curative</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000137</IRI>
-        <Literal xml:lang="en">Palliative</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Palliative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000138</IRI>
-        <Literal>might need a definition here.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">might need a definition here.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000138</IRI>
-        <Literal xml:lang="en">Prognosis</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prognosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000139</IRI>
-        <Literal xml:lang="en">Curable</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Curable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000140</IRI>
-        <Literal xml:lang="en">Incurable</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Incurable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000141</IRI>
-        <Literal xml:lang="en">InflectionPoint</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InflectionPoint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000142</IRI>
-        <Literal xml:lang="en">Relapsed</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relapsed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000143</IRI>
-        <Literal xml:lang="en">Refractory</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refractory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000144</IRI>
-        <Literal xml:lang="en">hasIntent</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasIntent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000145</IRI>
-        <Literal xml:lang="en">hasInflectionPoint</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasInflectionPoint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000146</IRI>
-        <Literal xml:lang="en">hasPrognosis</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasPrognosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000150</IRI>
-        <Literal xml:lang="en">Borderline</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000151</IRI>
-        <Literal xml:lang="en">hasPriorTherapy</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Borderline</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000152</IRI>
-        <Literal xml:lang="en">hasPriorTherapy</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasPriorTherapy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000153</IRI>
-        <Literal>Cancer care for an individual can be thought of as a series of attempted treatments known as lines. Lines are guided by intents, indicating whether they are “curative”, “palliative”, or “borderline”. Lines might also be distinguished by inflection points (relapsed or refractory), prognosis (incurable, curable) and possibly indication of prior therapy (untreated).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cancer care for an individual can be thought of as a series of attempted treatments known as lines. Lines are guided by intents, indicating whether they are “curative”, “palliative”, or “borderline”. Lines might also be distinguished by inflection points (relapsed or refractory), prognosis (incurable, curable) and possibly indication of prior therapy (untreated).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000153</IRI>
-        <Literal xml:lang="en">Line</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Line</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000154</IRI>
-        <Literal xml:lang="en">isDeterminate</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">isDeterminate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000155</IRI>
-        <Literal>The study protocol is the scienitic plan for evaluating the efficiacy of a treatment protocol.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The study protocol is the scienitic plan for evaluating the efficiacy of a treatment protocol.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000155</IRI>
-        <Literal xml:lang="en">StudyProtocol</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">StudyProtocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000156</IRI>
-        <Literal xml:lang="en">hasStudyProtocol</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasStudyProtocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000162</IRI>
-        <Literal>TODO: LINK DIRECTLY TO NCI -make &quot;hasCode&quot; work better.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TODO: LINK DIRECTLY TO NCI -make &quot;hasCode&quot; work better.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000162</IRI>
-        <Literal xml:lang="en">Diagnosis</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Diagnosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000163</IRI>
-        <Literal xml:lang="en">hasName</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000164</IRI>
-        <Literal xml:lang="en">hasCode</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasCode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000183</IRI>
-        <Literal xml:lang="en">COG_AAML_1031_Aplenc</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COG_AAML_1031_Aplenc</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000184</IRI>
-        <Literal xml:lang="en">hasPriorPhase</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasPriorPhase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000185</IRI>
-        <Literal xml:lang="en">hasSubsequentPhase</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSubsequentPhase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000189</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Induction_1</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Induction_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000190</IRI>
-        <Literal xml:lang="en">Induction</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Induction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000191</IRI>
-        <Literal xml:lang="en">PrePhase</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PrePhase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000192</IRI>
-        <Literal xml:lang="en">PreInduction</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PreInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000193</IRI>
-        <Literal xml:lang="en">Consolidation</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consolidation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000194</IRI>
-        <Literal xml:lang="en">Intensification</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000195</IRI>
-        <Literal xml:lang="en">Maintenance</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000196</IRI>
-        <Literal xml:lang="en">InterimMaintenance</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InterimMaintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000197</IRI>
-        <Literal xml:lang="en">Adjuvant</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Adjuvant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000198</IRI>
-        <Literal xml:lang="en">NeoAdjuvant</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NeoAdjuvant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000199</IRI>
-        <Literal xml:lang="en">Definitive</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Definitive</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000200</IRI>
-        <Literal xml:lang="en">DelayedIntensification</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DelayedIntensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000201</IRI>
-        <Literal xml:lang="en">Continuation</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Continuation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000202</IRI>
-        <Literal xml:lang="en">Salvage</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Salvage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000203</IRI>
-        <Literal xml:lang="en">UpfrontInduction</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UpfrontInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000204</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Induction_2</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Induction_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000205</IRI>
-        <Literal xml:lang="en">hasPriorRegimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasPriorRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000206</IRI>
-        <Literal xml:lang="en">hasSubsequentRegimen</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasSubsequentRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000207</IRI>
-        <Literal xml:lang="en">hasEligibleBiomarker</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasEligibleBiomarker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000208</IRI>
-        <Literal xml:lang="en">FLT3_ITD+</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FLT3_ITD+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000209</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_1</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Intensification_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000210</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000211</IRI>
-        <Literal xml:lang="en">ReInduction</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ReInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000212</IRI>
-        <Literal xml:lang="en">PostConsolidation</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PostConsolidation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000214</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COG_AAML_1031_Arm_C_(FLT3/ITD+)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000215</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COG_AAML_1031</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000216</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Induction_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000217</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UpfrontInduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000218</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Salvage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000219</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Continuation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000220</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PostConsolidation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000221</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ReInduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000222</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DelayedIntensification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000223</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Definitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000224</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NeoAdjuvant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000225</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Adjuvant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000226</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InterimMaintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000227</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000228</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intensification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000229</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consolidation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000230</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PreInduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000231</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PrePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000232</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Induction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000234</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FLT3_ITD+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000235</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Induction_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000236</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Intensification_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000237</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000239</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">hasIntervalBeforeNextTreatment</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
