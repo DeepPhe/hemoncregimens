@@ -1,13 +1,10 @@
-* work on ordering of phases?
-**How do i say that induction may be followed by either intensification or consoolidation?
-
-* add cancer, cns, and locall subytypes of administration to medication administartion
-* add these administrations to regiemn
-
-
-continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
-
-
+- move away from medication categories - all medications should be in one list. we will use medicationadministration catgories to indicate how each drug is used in a given protocol.
+- populate the induction, intensification, etc. from  AAML with meds and administration.
+- try to figure out how to best model the ordering of regimens
+- run pellet and look at reasoning errors.a
+- remove redundant information?
+- remove instances
+- continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
 
 
 
@@ -93,3 +90,10 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 		continuation
 		salvage
 		upfrontinductiontherapy
+
+
+* work on ordering of phases?
+**How do i say that induction may be followed by either intensification or consoolidation?
+
+* add cancer, cns, and locall subytypes of administration to medication administartion
+* add these administrations to regiemn
