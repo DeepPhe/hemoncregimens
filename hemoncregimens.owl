@@ -1321,6 +1321,10 @@
         </DataSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000113"/>
+        <Class IRI="/0000109"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/0000116"/>
         <Class IRI="/0000084"/>
     </ObjectPropertyRange>
