@@ -334,37 +334,16 @@
         <NamedIndividual IRI="#Cytarabine"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CytarabineAdministration"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Daunorubicin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DuanorubicinAdministration"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Etoposide"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EtoposideAdministration"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/0000183"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000189"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000204"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000209"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/0000210"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="/0000133"/>
@@ -904,18 +883,6 @@
         <Class IRI="/0000232"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#AnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="#CytarabineAdministration"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="#DuanorubicinAdministration"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="#EtoposideAdministration"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Protocol"/>
         <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
     </ClassAssertion>
@@ -923,121 +890,20 @@
         <Class IRI="/0000074"/>
         <NamedIndividual IRI="/0000183"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/0000084"/>
-        <NamedIndividual IRI="/0000189"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/0000084"/>
-        <NamedIndividual IRI="/0000204"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/0000084"/>
-        <NamedIndividual IRI="/0000209"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/0000084"/>
-        <NamedIndividual IRI="/0000210"/>
-    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/0000077"/>
         <NamedIndividual IRI="#COG_AAML_1031"/>
         <NamedIndividual IRI="/0000183"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedication"/>
-        <NamedIndividual IRI="#CytarabineAdministration"/>
-        <NamedIndividual IRI="#Cytarabine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedication"/>
-        <NamedIndividual IRI="#DuanorubicinAdministration"/>
-        <NamedIndividual IRI="#Daunorubicin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedication"/>
-        <NamedIndividual IRI="#EtoposideAdministration"/>
-        <NamedIndividual IRI="#Etoposide"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000116"/>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-        <NamedIndividual IRI="/0000189"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000116"/>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-        <NamedIndividual IRI="/0000204"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000116"/>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-        <NamedIndividual IRI="/0000209"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000116"/>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-        <NamedIndividual IRI="/0000210"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="/0000156"/>
         <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
         <NamedIndividual IRI="#COG_AAML_1031"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="/0000189"/>
-        <NamedIndividual IRI="#CytarabineAdministration"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="/0000189"/>
-        <NamedIndividual IRI="#DuanorubicinAdministration"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
-        <NamedIndividual IRI="/0000189"/>
-        <NamedIndividual IRI="#EtoposideAdministration"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000205"/>
-        <NamedIndividual IRI="/0000204"/>
-        <NamedIndividual IRI="/0000189"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000205"/>
-        <NamedIndividual IRI="/0000209"/>
-        <NamedIndividual IRI="/0000204"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000205"/>
-        <NamedIndividual IRI="/0000210"/>
-        <NamedIndividual IRI="/0000209"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/0000075"/>
         <NamedIndividual IRI="/0000183"/>
         <Literal>10.3324/haematol.2019.220962</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="/0000189"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">28</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="/0000204"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">36</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="/0000209"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">33</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="/0000210"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
@@ -1735,16 +1601,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000189</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Induction_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000204</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Induction_2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000205</IRI>
         <Literal xml:lang="en">hasPriorRegimen</Literal>
     </AnnotationAssertion>
@@ -1757,16 +1613,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000207</IRI>
         <Literal xml:lang="en">hasEligibleBiomarker</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000209</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000210</IRI>
-        <Literal xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

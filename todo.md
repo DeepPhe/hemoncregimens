@@ -1,4 +1,3 @@
-- move away from medication categories - all medications should be in one list. we will use medicationadministration catgories to indicate how each drug is used in a given protocol.
 - populate the induction, intensification, etc. from  AAML with meds and administration.
 - try to figure out how to best model the ordering of regimens
 - run pellet and look at reasoning errors.a
@@ -97,3 +96,6 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 
 * add cancer, cns, and locall subytypes of administration to medication administartion
 * add these administrations to regiemn
+- move away from medication categories - all medications should be in one list. we will use medicationadministration catgories to indicate how each drug is used in a given protocol.
+- what about the instances of AAML_1031_ARMC_C , etc.?  - yes. remove these instances
+- should we remove the explicit instances of medication administration? yes
