@@ -1,8 +1,8 @@
 - populate the induction, intensification, etc. from  AAML with meds and administration.
+- is there any way to avoid explosuion of classes with medication adminsitration?
+
 - try to figure out how to best model the ordering of regimens
-- run pellet and look at reasoning errors.a
 - remove redundant information?
-- remove instances
 - continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
 
 
@@ -99,3 +99,5 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 - move away from medication categories - all medications should be in one list. we will use medicationadministration catgories to indicate how each drug is used in a given protocol.
 - what about the instances of AAML_1031_ARMC_C , etc.?  - yes. remove these instances
 - should we remove the explicit instances of medication administration? yes
+- run pellet and look at reasoning errors.a
+- remove instances

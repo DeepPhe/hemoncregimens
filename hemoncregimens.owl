@@ -16,6 +16,12 @@
         <Class IRI="#AnticancerMedicationAdministration"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Danorubicin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DanorubicinAdministration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LocalTherapyMedicationAdministration"/>
     </Declaration>
     <Declaration>
@@ -354,19 +360,27 @@
         <Class IRI="#MedicationAdministration"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Danorubicin"/>
+        <Class IRI="/0000090"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DanorubicinAdministration"/>
+        <Class IRI="/0000246"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DanorubicinAdministration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000094"/>
+            <Class IRI="#Danorubicin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalTherapyMedicationAdministration"/>
         <Class IRI="#MedicationAdministration"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MedicationAdministration"/>
         <Class IRI="/0000117"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MedicationAdministration"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000094"/>
-            <Class IRI="/0000245"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MedicationAdministration"/>
@@ -666,6 +680,13 @@
         <Class IRI="/0000216"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
+            <Class IRI="#DanorubicinAdministration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000216"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
             <Class IRI="/0000247"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -858,6 +879,13 @@
     <SubClassOf>
         <Class IRI="/0000247"/>
         <Class IRI="/0000246"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000247"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000094"/>
+            <Class IRI="/0000245"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -1254,6 +1282,11 @@
         <DataProperty IRI="/0000239"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DanorubicinAdministration</IRI>
+        <Literal>DanorubicinAdministration-3day50mg</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#cycle</IRI>
@@ -1747,7 +1780,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000247</IRI>
-        <Literal xml:lang="en">CytarabineAdministration</Literal>
+        <Literal xml:lang="en">CytarabineAdministration-10day100mg</Literal>
     </AnnotationAssertion>
 </Ontology>
 
