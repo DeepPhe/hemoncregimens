@@ -196,6 +196,15 @@
         <Class IRI="/0000247"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/0000248"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000249"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000250"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -693,6 +702,13 @@
     <SubClassOf>
         <Class IRI="/0000216"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAnticancerMedicationAdministration"/>
+            <Class IRI="/0000248"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000216"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasPhase"/>
             <Class IRI="/0000232"/>
         </ObjectSomeValuesFrom>
@@ -878,7 +894,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000247"/>
-        <Class IRI="/0000246"/>
+        <Class IRI="/0000248"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000247"/>
@@ -886,6 +902,18 @@
             <ObjectProperty IRI="/0000094"/>
             <Class IRI="/0000245"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000248"/>
+        <Class IRI="/0000246"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000249"/>
+        <Class IRI="#LocalTherapyMedicationAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000250"/>
+        <Class IRI="/0000249"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -1781,6 +1809,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000247</IRI>
         <Literal xml:lang="en">CytarabineAdministration-10day100mg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000248</IRI>
+        <Literal xml:lang="en">CytarabineAdministration-Chemo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000249</IRI>
+        <Literal xml:lang="en">CNSTherapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000250</IRI>
+        <Literal xml:lang="en">CytarabineAdministration-CNS</Literal>
     </AnnotationAssertion>
 </Ontology>
 
