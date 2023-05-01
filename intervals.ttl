@@ -1,0 +1,111 @@
+@prefix : <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/> .
+
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000268
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000268> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:label "hasDose"@en .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000256> ;
+                      rdfs:range <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                             rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                          owl:onDatatype xsd:integer ;
+                                                                                          owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                                 ]
+                                                                                                                 [ xsd:maxInclusive 120
+                                                                                                                 ]
+                                                                                                               )
+                                                                                        ] ;
+                                                                             rdfs:label "hasAge"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000256
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000256> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf owl:Thing ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000268> ;
+                                                                                               owl:someValuesFrom <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259>
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258> ;
+                                                                                               owl:someValuesFrom xsd:integer
+                                                                                             ] ;
+                                                                             rdfs:label "Person"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf owl:Thing ;
+                                                                             rdfs:label "Dose"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000266
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000266> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259> ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258> ;
+                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                    owl:onDatatype xsd:integer ;
+                                                                                                                    owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                                                           ]
+                                                                                                                                           [ xsd:maxInclusive 20
+                                                                                                                                           ]
+                                                                                                                                         )
+                                                                                                                  ]
+                                                                                             ] ;
+                                                                             rdfs:label "YouthDose"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000267
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000267> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000259> ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258> ;
+                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                    owl:onDatatype xsd:integer ;
+                                                                                                                    owl:withRestrictions ( [ xsd:minInclusive 20
+                                                                                                                                           ]
+                                                                                                                                           [ xsd:maxInclusive 120
+                                                                                                                                           ]
+                                                                                                                                         )
+                                                                                                                  ]
+                                                                                             ] ;
+                                                                             rdfs:label "AdultDose"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000265
+<http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000265> rdf:type owl:NamedIndividual ;
+                                                                             <http://www.semanticweb.org/ontologies/2023/4/untitled-ontology-305/0000258> 50 ;
+                                                                             rdfs:label "Methus"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
