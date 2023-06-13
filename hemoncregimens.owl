@@ -58,7 +58,7 @@
         <Class IRI="#EtoposideAdministration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ExtentofDisease"/>
+        <Class IRI="#ExtentOfDisease"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fitness"/>
@@ -106,6 +106,9 @@
         <Class IRI="#Relapsed"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Resectability"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Resectable"/>
     </Declaration>
     <Declaration>
@@ -127,13 +130,10 @@
         <Class IRI="#Tolerance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Unresectable"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#cycle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#resectable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unresectable"/>
     </Declaration>
     <Declaration>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
@@ -292,6 +292,24 @@
         <Class IRI="/0000250"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/0000289"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000290"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000291"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000292"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000293"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000294"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -404,6 +422,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000207"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000295"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000296"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAge"/>
@@ -519,6 +543,10 @@
     <EquivalentClasses>
         <Class IRI="/0000133"/>
         <Class IRI="/0000134"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/0000291"/>
+        <Class IRI="/0000292"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AAML_1031_ARM_A_high-risk_Induction_1"/>
@@ -762,11 +790,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Localized"/>
-        <Class IRI="#ExtentofDisease"/>
+        <Class IRI="#ExtentOfDisease"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LocallyAdvanced"/>
-        <Class IRI="#ExtentofDisease"/>
+        <Class IRI="#ExtentOfDisease"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LocoregionalAnticancerTreatmentRegimen"/>
@@ -778,7 +806,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Metastatic"/>
-        <Class IRI="#ExtentofDisease"/>
+        <Class IRI="#ExtentOfDisease"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mitoxantrone"/>
@@ -812,6 +840,10 @@
         <Class IRI="#PatientPhenotype"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Resectable"/>
+        <Class IRI="#Resectability"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Resistance"/>
         <Class IRI="#PatientPhenotype"/>
     </SubClassOf>
@@ -836,6 +868,10 @@
         <Class IRI="#PatientPhenotype"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Unresectable"/>
+        <Class IRI="#Resectability"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#cycle"/>
         <Class IRI="/0000084"/>
     </SubClassOf>
@@ -845,14 +881,6 @@
             <DataProperty IRI="#hasRepetitions"/>
             <Datatype abbreviatedIRI="owl:rational"/>
         </DataMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#resectable"/>
-        <Class IRI="#Resectable"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#unresectable"/>
-        <Class IRI="#Resectable"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
@@ -902,6 +930,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000122"/>
             <Class IRI="/0000119"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Protocol"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000156"/>
+            <Class IRI="/0000155"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1358,6 +1393,44 @@
             <Class IRI="/0000245"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000289"/>
+        <Class IRI="#Eligibility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000290"/>
+        <Class IRI="/0000135"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000291"/>
+        <Class IRI="/0000135"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000292"/>
+        <Class IRI="/0000135"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000293"/>
+        <Class IRI="#MedicationAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000293"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000296"/>
+            <Class IRI="#MedicationAdministration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000294"/>
+        <Class IRI="#MedicationAdministration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000294"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/0000295"/>
+            <Class IRI="#MedicationAdministration"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
         <Class IRI="/0000137"/>
@@ -1380,6 +1453,10 @@
         <Class IRI="/0000230"/>
         <Class IRI="/0000231"/>
         <Class IRI="/0000232"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/0000293"/>
+        <Class IRI="/0000294"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#AAML_1031_ARM_A_high-risk_Induction_1"/>
@@ -2005,6 +2082,14 @@
         <ObjectProperty IRI="/0000207"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000295"/>
+        <ObjectProperty IRI="#hasMedicationAdministration"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000296"/>
+        <ObjectProperty IRI="#hasMedicationAdministration"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/0000184"/>
         <ObjectProperty IRI="/0000185"/>
@@ -2479,7 +2564,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/Protocol</IRI>
-        <Literal>Cancer care for an individual can be thought of as a series of attempted treatments known as lines. Lines are guided by intents, indicating whether they are “curative”, “palliative”, or “borderline”. Lines might also be distinguished by inflection points (relapsed or refractory), prognosis (incurable, curable) and possibly indication of prior therapy (untreated).</Literal>
+        <Literal>A treatment protocol (informally known as a protocol) is an intentional, ordered sequence of one or more regimens and/or procedures.  Although each regimen occurs within a specific phase of treatment, a protocol might span multiple phases.   A protocol cannot cross lines of therapy. Schema is often used as a synonym for a treatment protocol.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2955,6 +3040,46 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000250</IRI>
         <Literal xml:lang="en">CytarabineAdministration-CNS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000289</IRI>
+        <Literal xml:lang="en">PlatinumEligible</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000290</IRI>
+        <Literal xml:lang="en">NonCurative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000291</IRI>
+        <Literal xml:lang="en">Unclear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000292</IRI>
+        <Literal xml:lang="en">Unspecified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000293</IRI>
+        <Literal xml:lang="en">PrimaryAdministration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000294</IRI>
+        <Literal xml:lang="en">SecondaryAdministration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000295</IRI>
+        <Literal xml:lang="en">hasPreceedingMedicationAdministration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000296</IRI>
+        <Literal xml:lang="en">hasSubsequentMedicationAdministration</Literal>
     </AnnotationAssertion>
 </Ontology>
 
