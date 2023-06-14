@@ -310,6 +310,15 @@
         <Class IRI="/0000294"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/0000301"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000302"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000303"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -428,6 +437,24 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000296"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000304"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000305"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000306"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000307"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000308"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000309"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAge"/>
@@ -924,6 +951,10 @@
             <ObjectProperty IRI="/0000156"/>
             <Class IRI="/0000215"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Protocol"/>
+        <Class IRI="/0000117"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Protocol"/>
@@ -1430,6 +1461,21 @@
             <ObjectProperty IRI="/0000295"/>
             <Class IRI="#MedicationAdministration"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000301"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000305"/>
+            <Class IRI="#PatientPhenotype"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000302"/>
+        <Class IRI="/0000301"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000303"/>
+        <Class IRI="/0000301"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -2090,6 +2136,26 @@
         <ObjectProperty IRI="/0000296"/>
         <ObjectProperty IRI="#hasMedicationAdministration"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000305"/>
+        <ObjectProperty IRI="/0000304"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000306"/>
+        <ObjectProperty IRI="/0000304"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000307"/>
+        <ObjectProperty IRI="/0000304"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000308"/>
+        <ObjectProperty IRI="/0000304"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000309"/>
+        <ObjectProperty IRI="/0000304"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/0000184"/>
         <ObjectProperty IRI="/0000185"/>
@@ -2138,6 +2204,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/0000305"/>
+        <Class IRI="/0000301"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCourse"/>
@@ -2196,6 +2266,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000305"/>
+        <Class IRI="#PatientPhenotype"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasDose"/>
@@ -3080,6 +3154,51 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000296</IRI>
         <Literal xml:lang="en">hasSubsequentMedicationAdministration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000301</IRI>
+        <Literal xml:lang="en">Setting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000302</IRI>
+        <Literal xml:lang="en">CurableSetting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000303</IRI>
+        <Literal xml:lang="en">IncurableSetting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000304</IRI>
+        <Literal xml:lang="en">hasSettingComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000305</IRI>
+        <Literal xml:lang="en">hasPhenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000306</IRI>
+        <Literal xml:lang="en">hasHistology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000307</IRI>
+        <Literal xml:lang="en">hasExtentOfDisease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000308</IRI>
+        <Literal xml:lang="en">hasResectability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000309</IRI>
+        <Literal xml:lang="en">hasRiskStratification</Literal>
     </AnnotationAssertion>
 </Ontology>
 
