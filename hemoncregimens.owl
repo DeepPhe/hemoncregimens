@@ -43,10 +43,19 @@
         <Class IRI="#ChemotherapyAdministation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Components"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Daunorubicin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DaunorubicinAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EarlyStageFavorable"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Eligibility"/>
@@ -61,10 +70,19 @@
         <Class IRI="#ExtentOfDisease"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Favorable"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Fitness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Histology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Local"/>
@@ -97,6 +115,9 @@
         <Class IRI="#PatientPhenotype"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Poor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Portion"/>
     </Declaration>
     <Declaration>
@@ -115,6 +136,9 @@
         <Class IRI="#Resistance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RiskStratification"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sensitivity"/>
     </Declaration>
     <Declaration>
@@ -130,10 +154,52 @@
         <Class IRI="#Tolerance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TreatmentExposure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltraHighRisk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unfavorable"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Unresectable"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#VeryHighRisk"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#determinate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#incurable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#indeterminate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#periooperative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#treated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#untreated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#window"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#/2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#/3"/>
     </Declaration>
     <Declaration>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
@@ -774,6 +840,10 @@
         <Class IRI="#Systematic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Component"/>
+        <Class IRI="/0000117"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Daunorubicin"/>
         <Class IRI="/0000090"/>
     </SubClassOf>
@@ -787,6 +857,10 @@
             <ObjectProperty IRI="/0000094"/>
             <Class IRI="#Daunorubicin"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EarlyStageFavorable"/>
+        <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Eligibility"/>
@@ -808,8 +882,20 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Favorable"/>
+        <Class IRI="#RiskStratification"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Fitness"/>
         <Class IRI="#PatientPhenotype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Good"/>
+        <Class IRI="#RiskStratification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediate"/>
+        <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Local"/>
@@ -855,6 +941,10 @@
         <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Poor"/>
+        <Class IRI="#RiskStratification"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Portion"/>
         <Class IRI="/0000084"/>
     </SubClassOf>
@@ -895,8 +985,20 @@
         <Class IRI="#PatientPhenotype"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UltraHighRisk"/>
+        <Class IRI="#RiskStratification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unfavorable"/>
+        <Class IRI="#RiskStratification"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Unresectable"/>
         <Class IRI="#Resectability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryHighRisk"/>
+        <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#cycle"/>
@@ -908,6 +1010,46 @@
             <DataProperty IRI="#hasRepetitions"/>
             <Datatype abbreviatedIRI="owl:rational"/>
         </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#determinate"/>
+        <Class IRI="#line"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#incurable"/>
+        <Class IRI="#Histology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#indeterminate"/>
+        <Class IRI="#line"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#line"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#periooperative"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#treated"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#untreated"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#window"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#/2"/>
+        <Class IRI="#Histology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#/3"/>
+        <Class IRI="#Histology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
@@ -1474,8 +1616,36 @@
         <Class IRI="/0000301"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/0000302"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000305"/>
+            <Class IRI="#PatientPhenotype"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000302"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000306"/>
+            <Class IRI="#Histology"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/0000303"/>
         <Class IRI="/0000301"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000305"/>
+            <Class IRI="#PatientPhenotype"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000306"/>
+            <Class IRI="#Histology"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
