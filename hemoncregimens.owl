@@ -46,9 +46,6 @@
         <Class IRI="#Component"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Components"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Daunorubicin"/>
     </Declaration>
     <Declaration>
@@ -385,6 +382,18 @@
         <Class IRI="/0000303"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/0000310"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000311"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000312"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000315"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -449,9 +458,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000122"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000124"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000125"/>
@@ -521,6 +527,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000309"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000313"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasAge"/>
@@ -633,6 +642,13 @@
     <Declaration>
         <NamedIndividual IRI="/0000183"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/0000314"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/0000090"/>
+        <Class IRI="/0000315"/>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="/0000133"/>
         <Class IRI="/0000134"/>
@@ -915,7 +931,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MedicationAdministration"/>
-        <Class IRI="/0000117"/>
+        <Class IRI="#Component"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Metastatic"/>
@@ -1154,15 +1170,15 @@
     <SubClassOf>
         <Class IRI="/0000084"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasLocalTherapyMedicationAdministration"/>
-            <Class IRI="/0000090"/>
+            <ObjectProperty IRI="#hasPhase"/>
+            <Class IRI="/0000078"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000084"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasPhase"/>
-            <Class IRI="/0000078"/>
+            <ObjectProperty IRI="/0000313"/>
+            <Class IRI="#Component"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1171,6 +1187,10 @@
             <DataProperty IRI="/0000099"/>
             <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000090"/>
+        <Class IRI="#Component"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000095"/>
@@ -1189,7 +1209,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000118"/>
-        <Class IRI="/0000117"/>
+        <Class IRI="#Component"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000119"/>
@@ -1612,40 +1632,53 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000302"/>
         <Class IRI="/0000301"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000302"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000305"/>
-            <Class IRI="#PatientPhenotype"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000302"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000306"/>
             <Class IRI="#Histology"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000303"/>
+        <Class IRI="/0000301"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000307"/>
+            <Class IRI="#ExtentOfDisease"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000301"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000308"/>
+            <Class IRI="#Resectability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000302"/>
         <Class IRI="/0000301"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000303"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000305"/>
-            <Class IRI="#PatientPhenotype"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="/0000301"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000303"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000306"/>
-            <Class IRI="#Histology"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="/0000310"/>
+        <Class IRI="#LocoregionalAnticancerTreatmentRegimen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000310"/>
+        <Class IRI="#SystematicAnticancerTreatmentRegimen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000311"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000312"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000315"/>
+        <Class IRI="#Component"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -2235,22 +2268,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000124"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000125"/>
-        <ObjectProperty IRI="/0000124"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000126"/>
-        <ObjectProperty IRI="/0000124"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000128"/>
-        <ObjectProperty IRI="/0000124"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000129"/>
         <ObjectProperty IRI="/0000125"/>
     </SubObjectPropertyOf>
@@ -2326,6 +2343,10 @@
         <ObjectProperty IRI="/0000309"/>
         <ObjectProperty IRI="/0000304"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000313"/>
+        <ObjectProperty IRI="/0000120"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/0000184"/>
         <ObjectProperty IRI="/0000185"/>
@@ -2340,6 +2361,10 @@
     <TransitiveObjectProperty>
         <ObjectProperty IRI="/0000113"/>
     </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMedicationAdministration"/>
+        <Class IRI="/0000084"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPhase"/>
         <Class IRI="/0000084"/>
@@ -2361,10 +2386,6 @@
         <Class IRI="/0000119"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000124"/>
-        <Class IRI="/0000084"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000156"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000132"/>
@@ -2379,9 +2400,29 @@
         <ObjectProperty IRI="/0000305"/>
         <Class IRI="/0000301"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/0000306"/>
+        <Class IRI="/0000301"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/0000307"/>
+        <Class IRI="/0000301"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/0000308"/>
+        <Class IRI="/0000301"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/0000313"/>
+        <Class IRI="/0000084"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCourse"/>
         <Class IRI="/0000084"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMedicationAdministration"/>
+        <Class IRI="#MedicationAdministration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPhase"/>
@@ -2440,6 +2481,22 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000305"/>
         <Class IRI="#PatientPhenotype"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000306"/>
+        <Class IRI="#Histology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000307"/>
+        <Class IRI="#ExtentOfDisease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000308"/>
+        <Class IRI="#Resectability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000313"/>
+        <Class IRI="#Component"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasDose"/>
@@ -2530,6 +2587,11 @@
         <DataProperty IRI="/0000239"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Component</IRI>
+        <Literal>A component is the base unit of a drug or procedure. A component might have additional characteristics describing the magnitude or means of delivery.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cytarabine_10day100mg</IRI>
@@ -2706,6 +2768,11 @@
         <Literal xml:lang="en">Mitoxantrone_day3-6_12mg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#cycle</IRI>
+        <Literal>A cycle or course is a regimen  that is delivered – either by a clinician, patient, or caregiver - on specific days, often in a specific sequence, during a named phase of treatment. A cycle is typically the least divisible unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#cycle</IRI>
         <Literal>Cycle</Literal>
@@ -2841,6 +2908,11 @@
         <Literal xml:lang="en">Phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000084</IRI>
+        <Literal>A regimen is a concurrent group of components designed to be synergistic. Regimens may be conducted over some # of days or weeks, although some may continue indefinitely</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000084</IRI>
         <Literal>which course - first second, third</Literal>
@@ -2936,9 +3008,19 @@
         <Literal xml:lang="en">hasRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000117</IRI>
+        <Literal>Treatments are actions taken to remove, ameliorate, or otherwise modify the course of disease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000117</IRI>
         <Literal xml:lang="en">Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000118</IRI>
+        <Literal>A procedure is an invasive therapy that occurs over minutes to hours, performed by a trained operator (e.g., surgeon; interventional radiologist). The effect of the therapy is simultaneous or near simultaneous. In the cancer context, the intent of a procedure is to remove, burn, freeze, deprive, or directly poison cancer tissue.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2964,11 +3046,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000122</IRI>
         <Literal xml:lang="en">hasTreatmentList</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000124</IRI>
-        <Literal xml:lang="en">hasMedicationModality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3369,6 +3446,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000309</IRI>
         <Literal xml:lang="en">hasRiskStratification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000310</IRI>
+        <Literal xml:lang="en">MultimodalRegimen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000311</IRI>
+        <Literal xml:lang="en">PeriOperative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000312</IRI>
+        <Literal xml:lang="en">Window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000313</IRI>
+        <Literal xml:lang="en">hasTreatmentComponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000314</IRI>
+        <Literal xml:lang="en">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000315</IRI>
+        <Literal xml:lang="en">Drug</Literal>
     </AnnotationAssertion>
 </Ontology>
 
