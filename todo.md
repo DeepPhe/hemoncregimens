@@ -1,3 +1,7 @@
+populate definitions
+  - phases onwards.
+
+
 - populate the induction, intensification, etc. from  AAML with meds and administration.
 - is there any way to avoid explosuion of classes with medication adminsitration?
 

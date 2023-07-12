@@ -64,6 +64,9 @@
         <Class IRI="#EtoposideAdministration"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Exposed"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ExtentOfDisease"/>
     </Declaration>
     <Declaration>
@@ -163,6 +166,9 @@
         <Class IRI="#Unresectable"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Untreated"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VeryHighRisk"/>
     </Declaration>
     <Declaration>
@@ -182,15 +188,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#periooperative"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#treated"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#untreated"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#window"/>
     </Declaration>
     <Declaration>
         <Class IRI="#/2"/>
@@ -394,6 +391,15 @@
         <Class IRI="/0000315"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/0000316"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000317"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000318"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -532,6 +538,12 @@
         <ObjectProperty IRI="/0000313"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/0000319"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/0000320"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasAge"/>
     </Declaration>
     <Declaration>
@@ -645,6 +657,14 @@
     <Declaration>
         <AnnotationProperty IRI="/0000314"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Exposed"/>
+        <Class IRI="/0000317"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Untreated"/>
+        <Class IRI="/0000316"/>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="/0000090"/>
         <Class IRI="/0000315"/>
@@ -898,6 +918,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Exposed"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Favorable"/>
         <Class IRI="#RiskStratification"/>
     </SubClassOf>
@@ -993,6 +1017,20 @@
         <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SystematicAnticancerTreatmentRegimen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000319"/>
+            <Class IRI="/0000293"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SystematicAnticancerTreatmentRegimen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000320"/>
+            <Class IRI="/0000294"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TargetedtherapyAdministration"/>
         <Class IRI="#Systematic"/>
     </SubClassOf>
@@ -1011,6 +1049,10 @@
     <SubClassOf>
         <Class IRI="#Unresectable"/>
         <Class IRI="#Resectability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Untreated"/>
+        <Class IRI="#TreatmentExposure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VeryHighRisk"/>
@@ -1045,18 +1087,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#periooperative"/>
-        <Class IRI="/0000078"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#treated"/>
-        <Class IRI="#TreatmentExposure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#untreated"/>
-        <Class IRI="#TreatmentExposure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#window"/>
         <Class IRI="/0000078"/>
     </SubClassOf>
     <SubClassOf>
@@ -1172,6 +1202,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasPhase"/>
             <Class IRI="/0000078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000084"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000116"/>
+            <Class IRI="/0000084"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1679,6 +1716,18 @@
     <SubClassOf>
         <Class IRI="/0000315"/>
         <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000316"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000317"/>
+        <Class IRI="#TreatmentExposure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000318"/>
+        <Class IRI="/0000084"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -2347,6 +2396,14 @@
         <ObjectProperty IRI="/0000313"/>
         <ObjectProperty IRI="/0000120"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000319"/>
+        <ObjectProperty IRI="/0000120"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000320"/>
+        <ObjectProperty IRI="/0000120"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/0000184"/>
         <ObjectProperty IRI="/0000185"/>
@@ -2743,6 +2800,11 @@
         <Literal xml:lang="en">Etoposide_5day5mg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#LocoregionalAnticancerTreatmentRegimen</IRI>
+        <Literal>A locoregional anticancer treatment regimen has a localized anticancer component instead of a systemic component Otherwise, it follows the same rules as the SACT regimens described above. Locoregional anticancer treatment regimens can and do contain medications, which are delivered in such a manner that they do not distribute throughout the body. Examples include hepatic arterial infusional chemotherapy (HAIC), intraperitoneal chemotherapy, and isolated limb perfusion, and radiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Mitoxantrone</IRI>
         <Literal xml:lang="en">Mitoxantrone</Literal>
@@ -2766,6 +2828,31 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Mitoxantrone_day3-6_12mg</IRI>
         <Literal xml:lang="en">Mitoxantrone_day3-6_12mg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Part</IRI>
+        <Literal>A part is a sequential subsection of a protocol (i.e., a regimen or procedure),  which is usually synonymous with the phase of treatment in which it occurs. When parts occur within the same phase, they are usually referred to as part 1, part 2 or part A, part B or part I, part II, etc. A part is a regimen (or procedure).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Part</IRI>
+        <Literal>*NEEDS CLARIFICATION*</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Portion</IRI>
+        <Literal>A portion is a sequential subsection of a regimen, such as the AC portion and the T portion of sequential AC-T. A portion must fit within one cycle/course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Portion</IRI>
+        <Literal>Needs clarification (12 July 2023)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#SystematicAnticancerTreatmentRegimen</IRI>
+        <Literal>A systemic anticancer treatment (SACT) regimen is a grouping of medications, at least one of which must have a systemic anticancer intent/mechanism of action. In this context, “systemic” refers to medications administered intravenously, as opposed to localized therapies administered to a specific body part.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
@@ -2873,7 +2960,7 @@
         <Literal xml:lang="en">Erwinaze_day2-9_830IU/m2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>/Protocol</IRI>
         <Literal>A treatment protocol (informally known as a protocol) is an intentional, ordered sequence of one or more regimens and/or procedures.  Although each regimen occurs within a specific phase of treatment, a protocol might span multiple phases.   A protocol cannot cross lines of therapy. Schema is often used as a synonym for a treatment protocol.</Literal>
     </AnnotationAssertion>
@@ -2901,6 +2988,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000077</IRI>
         <Literal xml:lang="en">hasPublication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000078</IRI>
+        <Literal>A phase of treatment is an indication of when in the care process a patient is, within a line of therapy/treatment exposure. When a treatment plan is multi-phasic, it typically follows a “beginning-middle-end” pattern. Patients do not usually progress from one phase to the next without some type of re-evaluation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3083,6 +3175,11 @@
         <Literal xml:lang="en">Indeterminate Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000134</IRI>
+        <Literal>A regimen that does not have a specific endpoint.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000134</IRI>
         <Literal xml:lang="en">Indefinite Regimen</Literal>
@@ -3163,9 +3260,9 @@
         <Literal xml:lang="en">isDeterminate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>/0000155</IRI>
-        <Literal>The study protocol is the scienitic plan for evaluating the efficiacy of a treatment protocol.</Literal>
+        <Literal>A study protocol is a formal document developed by the sponsor of a study and may or may not be publicly available; for example, study protocols developed by pharmaceutical industry sponsors often have extensive redactions even when they are available as supplementary material to a published paper. Notably, regulatory agencies such as the FDA have access to full versions of study protocols. For the public, portions of study protocols are usually available at ClinicalTrials.gov or another clinical trials registry, and in one or more papers, may involve multiple treatment protocols.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3448,6 +3545,12 @@
         <Literal xml:lang="en">hasRiskStratification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000310</IRI>
+        <Literal>A multimodal regimen is a combination of a systematic anticancer regimen and a locoregional 
+treatment regimen; thus a multimodal regimen must have both a systematic treatment component and a locoregional treatment component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000310</IRI>
         <Literal xml:lang="en">MultimodalRegimen</Literal>
@@ -3473,9 +3576,44 @@
         <Literal xml:lang="en">definition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000315</IRI>
+        <Literal>A drug is a pharmaceutical intervention. Each instance of a drug as a treatment component will be associated with a signature which specifies the dose, route, frequency, and other details.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000315</IRI>
         <Literal xml:lang="en">Drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000316</IRI>
+        <Literal xml:lang="en">Unexposed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000317</IRI>
+        <Literal xml:lang="en">PreviouslyTreated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000318</IRI>
+        <Literal>A cycle or course is a regimen  that is delivered – either by a clinician, patient, or caregiver - on specific days, often in a specific sequence, during a named phase of treatment. A course is intended to be given once, but might be repeated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000318</IRI>
+        <Literal xml:lang="en">Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000319</IRI>
+        <Literal xml:lang="en">hasPrimaryTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000320</IRI>
+        <Literal xml:lang="en">hasSecondaryTreatment</Literal>
     </AnnotationAssertion>
 </Ontology>
 
