@@ -178,16 +178,10 @@
         <Class IRI="#determinate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#incurable"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#indeterminate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#line"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#periooperative"/>
     </Declaration>
     <Declaration>
         <Class IRI="#/2"/>
@@ -248,12 +242,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/0000137"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000139"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000140"/>
     </Declaration>
     <Declaration>
         <Class IRI="/0000141"/>
@@ -398,6 +386,33 @@
     </Declaration>
     <Declaration>
         <Class IRI="/0000318"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000321"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000322"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000323"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000324"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000325"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000326"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000327"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000328"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/0000329"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
@@ -662,6 +677,10 @@
         <Class IRI="/0000317"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Metastatic"/>
+        <Class IRI="/0000329"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Untreated"/>
         <Class IRI="/0000316"/>
     </EquivalentClasses>
@@ -672,6 +691,10 @@
     <EquivalentClasses>
         <Class IRI="/0000133"/>
         <Class IRI="/0000134"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/0000230"/>
+        <Class IRI="/0000231"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="/0000291"/>
@@ -1074,20 +1097,12 @@
         <Class IRI="#line"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#incurable"/>
-        <Class IRI="#Histology"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#indeterminate"/>
         <Class IRI="#line"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#line"/>
         <Class IRI="#TreatmentExposure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#periooperative"/>
-        <Class IRI="/0000078"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#/2"/>
@@ -1416,7 +1431,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000220"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000220"/>
@@ -1427,15 +1442,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000221"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000222"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000223"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000321"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000223"/>
@@ -1446,7 +1461,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000224"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000321"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000224"/>
@@ -1457,7 +1472,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000225"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000321"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000225"/>
@@ -1468,11 +1483,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000226"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000227"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000227"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000227"/>
@@ -1483,7 +1498,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000228"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000228"/>
@@ -1494,7 +1509,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000229"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000229"/>
@@ -1505,7 +1520,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000230"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000230"/>
@@ -1516,11 +1531,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000231"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000232"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000232"/>
@@ -1664,6 +1679,13 @@
     <SubClassOf>
         <Class IRI="/0000301"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/0000120"/>
+            <Class IRI="#TreatmentExposure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000301"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000305"/>
             <Class IRI="#PatientPhenotype"/>
         </ObjectSomeValuesFrom>
@@ -1707,11 +1729,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000311"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000321"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000312"/>
-        <Class IRI="/0000078"/>
+        <Class IRI="/0000322"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000315"/>
@@ -1728,6 +1750,42 @@
     <SubClassOf>
         <Class IRI="/0000318"/>
         <Class IRI="/0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000321"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000322"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000323"/>
+        <Class IRI="/0000078"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000324"/>
+        <Class IRI="#Eligibility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000325"/>
+        <Class IRI="#Tolerance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000326"/>
+        <Class IRI="#Tolerance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000327"/>
+        <Class IRI="#ExtentOfDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000328"/>
+        <Class IRI="#ExtentOfDisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/0000329"/>
+        <Class IRI="#ExtentOfDisease"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
@@ -1755,6 +1813,10 @@
     <DisjointClasses>
         <Class IRI="/0000293"/>
         <Class IRI="/0000294"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/0000325"/>
+        <Class IRI="/0000326"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#AAML_1031_ARM_A_high-risk_Induction_1"/>
@@ -2755,6 +2817,11 @@
         <Literal xml:lang="en">DaunorubicinAdministration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Eligibility</IRI>
+        <Literal>Statement of treatments that the patient might be qualified to have, such as platinum-eligible or non-eligible</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EtoposideAdministration</IRI>
         <Literal xml:lang="en">EtoposideAdministration</Literal>
@@ -2801,8 +2868,68 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
+        <IRI>#ExtentOfDisease</IRI>
+        <Literal>An assessment of the breadth of the spread of disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExtentOfDisease</IRI>
+        <Literal>ExtentOfDisease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Fitness</IRI>
+        <Literal>Summary of the patient&apos;s overall state of health</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fitness</IRI>
+        <Literal>Fitness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Histology</IRI>
+        <Literal>The cells of origin and the type of cancer, as determined through histological examination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Histology</IRI>
+        <Literal>Histology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Localized</IRI>
+        <Literal>Disease limited to a specific region of the body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Localized</IRI>
+        <Literal>Localized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#LocallyAdvanced</IRI>
+        <Literal>Disease that is advanced but not widespread</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LocallyAdvanced</IRI>
+        <Literal>LocallyAdvanced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>#LocoregionalAnticancerTreatmentRegimen</IRI>
         <Literal>A locoregional anticancer treatment regimen has a localized anticancer component instead of a systemic component Otherwise, it follows the same rules as the SACT regimens described above. Locoregional anticancer treatment regimens can and do contain medications, which are delivered in such a manner that they do not distribute throughout the body. Examples include hepatic arterial infusional chemotherapy (HAIC), intraperitoneal chemotherapy, and isolated limb perfusion, and radiation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Metastatic</IRI>
+        <Literal>Disease that has spread throughout the body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metastatic</IRI>
+        <Literal>Metastatic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2841,6 +2968,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
+        <IRI>#PatientPhenotype</IRI>
+        <Literal>Descriptions of factors of patient state that inform prognosis and, by extension, the treatment seetting and intent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>#Portion</IRI>
         <Literal>A portion is a sequential subsection of a regimen, such as the AC portion and the T portion of sequential AC-T. A portion must fit within one cycle/course.</Literal>
     </AnnotationAssertion>
@@ -2851,8 +2983,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Resistance</IRI>
+        <Literal>Indication that a patient does not respond to a given treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#RiskStratification</IRI>
+        <Literal>Description of a patient&apos;s prognosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiskStratification</IRI>
+        <Literal>RiskStratification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Sensitivity</IRI>
+        <Literal>Indication that a patient  responds to a given treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>#SystematicAnticancerTreatmentRegimen</IRI>
         <Literal>A systemic anticancer treatment (SACT) regimen is a grouping of medications, at least one of which must have a systemic anticancer intent/mechanism of action. In this context, “systemic” refers to medications administered intravenously, as opposed to localized therapies administered to a specific body part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Tolerance</IRI>
+        <Literal>Description of a patient&apos;s ability to take a chemotherapeautic agent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
@@ -2873,6 +3030,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasDose</IRI>
         <Literal xml:lang="en">hasDose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#/2</IRI>
+        <Literal>ICD-O Behavior code corresponding to In situ neoplasms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#/3</IRI>
+        <Literal>ICD-O behavior code corresponding to Malignant neoplasms, stated or presumed to be primary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#/3</IRI>
+        <Literal>/3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3127,7 +3299,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000120</IRI>
-        <Literal xml:lang="en">hasTreatment</Literal>
+        <Literal xml:lang="en">hasTreatmentExposure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3185,9 +3357,9 @@
         <Literal xml:lang="en">Indefinite Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>/0000135</IRI>
-        <Literal>the goal of a line of treatment</Literal>
+        <Literal>The stated goal of the anticancer treatment, conditioned on the setting in which treatment takes place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3195,24 +3367,24 @@
         <Literal xml:lang="en">Intent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000136</IRI>
+        <Literal>Treatments intended to cure the cancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000136</IRI>
         <Literal xml:lang="en">Curative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000137</IRI>
+        <Literal>Treatments given to imrpove the quality of life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000137</IRI>
         <Literal xml:lang="en">Palliative</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000139</IRI>
-        <Literal xml:lang="en">Curable</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000140</IRI>
-        <Literal xml:lang="en">Incurable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3345,6 +3517,11 @@
         <Literal xml:lang="en">UpfrontInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000218</IRI>
+        <Literal>Used almost exclusively in neuroblastoma to refer to a phase after consolidation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000218</IRI>
         <Literal xml:lang="en">Salvage</Literal>
@@ -3355,14 +3532,29 @@
         <Literal xml:lang="en">Continuation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000220</IRI>
+        <Literal>Used almost exclusively in neuroblastoma to refer to a phase after consolidation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000220</IRI>
         <Literal xml:lang="en">PostConsolidation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000221</IRI>
+        <Literal>Treatment given as follow-on to the induction. Can be planned, conditional, or at any point after the induction. Loosely, salvage induction is often called re-induction, since the goal is to re-induce remission.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000221</IRI>
-        <Literal xml:lang="en">ReInduction</Literal>
+        <Literal xml:lang="en">Re-Induction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000222</IRI>
+        <Literal>An intensification occurring after some gap in time, usually after consolidation. Also sometimes called late intensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3370,9 +3562,19 @@
         <Literal xml:lang="en">DelayedIntensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000223</IRI>
+        <Literal>Interventions with the intent of killing all cancer cells. These are almost always procedures such as surgery, or a locoregional radiation concurrent with systemic chemotherapy in the definitive setting (“definitive chemoradiotherapy”). Medication-only approaches are nearly never called definitive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000223</IRI>
         <Literal xml:lang="en">Definitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000224</IRI>
+        <Literal>Chemotherapy and/or radiation given when subsequent definitive surgery is assumed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3380,9 +3582,19 @@
         <Literal xml:lang="en">NeoAdjuvant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000225</IRI>
+        <Literal>Treatment (usually chemotherapy and/or radiation) after definitive surgery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000225</IRI>
         <Literal xml:lang="en">Adjuvant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000226</IRI>
+        <Literal>A special case of maintenance that occurs at some point other than the end of the line of treatment. For example, between early and late intensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3390,14 +3602,29 @@
         <Literal xml:lang="en">InterimMaintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000227</IRI>
+        <Literal>Treatment intended to sustain gains from earlier treatments that have led to a desirable response such as complete or partial remission or stable disease. Maintenance is typically the last phase in a line.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000227</IRI>
         <Literal xml:lang="en">Maintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000228</IRI>
+        <Literal>Increasing the strength of a prior treatment – usually in pediatrics. Consolidation and intensification are mutually exclusive. When there is more than one intensification phase in a protocol, the first is also sometimes called early intensification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000228</IRI>
         <Literal xml:lang="en">Intensification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000229</IRI>
+        <Literal>Intensification of treatment designed to bolster a promising response to induction. Generally weaker than initial treatment with some very notable exceptions – autologous and allogeneic stem cell transplants. Treatment given after definitive chemoradiotherapy is also often termed consolidation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3410,9 +3637,19 @@
         <Literal xml:lang="en">PreInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000231</IRI>
+        <Literal>Treatment given before induction. Also referred to as pre-induction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000231</IRI>
         <Literal xml:lang="en">PrePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000232</IRI>
+        <Literal>The initial therapy used to shrink a tumor.  Shorthand for “remission induction” which reflects the somewhat-current thinking that the only chance for cure for certain cancers is achieving a complete response to the first phase of therapy. Conversely, failure to achieve remission with induction therapy usually leads to the abandonment of that line of therapy. The waters are now considerably muddied by the emerging concept of minimal residual disease (MRD). Induction followed by surgery would retrospectively be considered neoadjuvant, even when the possibility of surgery was unclear at the time of induction (see borderline resectability, above).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3460,14 +3697,29 @@
         <Literal xml:lang="en">CytarabineAdministration-CNS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000289</IRI>
+        <Literal>Indication that the patient is a candidate for platinum therapies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000289</IRI>
         <Literal xml:lang="en">PlatinumEligible</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000290</IRI>
+        <Literal>Treatments given with the goal of extedning life, without the hope of removing the disease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000290</IRI>
         <Literal xml:lang="en">NonCurative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000291</IRI>
+        <Literal>Tratements lacking specifically-defined goals</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3500,14 +3752,29 @@
         <Literal xml:lang="en">hasSubsequentMedicationAdministration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000301</IRI>
+        <Literal>The time, place, and consequences in which treatment occurrs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000301</IRI>
         <Literal xml:lang="en">Setting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000302</IRI>
+        <Literal>Circumstances associated with curable cancer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000302</IRI>
         <Literal xml:lang="en">CurableSetting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000303</IRI>
+        <Literal>Circumstances associated with a cancer that is not curable.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3556,9 +3823,19 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">MultimodalRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000311</IRI>
+        <Literal>Chemotherapy and/or chemoradiotherapy that is given both before and after a surgical procedure, usually according to the same or a very similar schedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000311</IRI>
         <Literal xml:lang="en">PeriOperative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000312</IRI>
+        <Literal>A preplanned usually relatively short treatment exposure which forms the basis of a conditional therapy adaptation. Used almost exclusively in pediatric sarcoma</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3614,6 +3891,86 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000320</IRI>
         <Literal xml:lang="en">hasSecondaryTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000321</IRI>
+        <Literal>Phases in locoregional treatments intended to completely destroy all cancer cells.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000321</IRI>
+        <Literal xml:lang="en">Definitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000322</IRI>
+        <Literal>Phases in treatments that are anot localzized to a specific body region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000322</IRI>
+        <Literal xml:lang="en">Systemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000323</IRI>
+        <Literal xml:lang="en">Peri-Operative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000324</IRI>
+        <Literal>Indication that the patient is not a candidate for platinum therapies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000324</IRI>
+        <Literal xml:lang="en">PlatinumIneligible</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000325</IRI>
+        <Literal>Indication that a patient can safely take Platinum therapies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000325</IRI>
+        <Literal xml:lang="en">PlatinumTolerant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000326</IRI>
+        <Literal>Indication that a patient is not able to take Platinum therapies without adverse reaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000326</IRI>
+        <Literal xml:lang="en">PlatinumIntolerant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000327</IRI>
+        <Literal>Disease that is local or somwhat locally advanced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000327</IRI>
+        <Literal xml:lang="en">Early</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000328</IRI>
+        <Literal>Most locally advanced disease and metastatic disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000328</IRI>
+        <Literal xml:lang="en">Late</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/0000329</IRI>
+        <Literal xml:lang="en">Widespread</Literal>
     </AnnotationAssertion>
 </Ontology>
 
