@@ -55,9 +55,6 @@
         <Class IRI="#EarlyStageFavorable"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Eligibility"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Etoposide"/>
     </Declaration>
     <Declaration>
@@ -67,13 +64,7 @@
         <Class IRI="#Exposed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ExtentOfDisease"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Favorable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fitness"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Good"/>
@@ -88,19 +79,10 @@
         <Class IRI="#Local"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Localized"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LocallyAdvanced"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#LocoregionalAnticancerTreatmentRegimen"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MedicationAdministration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Metastatic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mitoxantrone"/>
@@ -112,34 +94,13 @@
         <Class IRI="#Part"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PatientPhenotype"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Poor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Portion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Refractory"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Relapsed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Resectability"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Resectable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Resistance"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RiskStratification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sensitivity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Systematic"/>
@@ -151,9 +112,6 @@
         <Class IRI="#TargetedtherapyAdministration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Tolerance"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#TreatmentExposure"/>
     </Declaration>
     <Declaration>
@@ -161,9 +119,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Unfavorable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Unresectable"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Untreated"/>
@@ -340,9 +295,6 @@
         <Class IRI="/0000250"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/0000289"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/0000290"/>
     </Declaration>
     <Declaration>
@@ -395,24 +347,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="/0000323"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000324"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000325"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000326"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000327"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000328"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/0000329"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
@@ -533,9 +467,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000304"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000305"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000306"/>
@@ -675,10 +606,6 @@
     <EquivalentClasses>
         <Class IRI="#Exposed"/>
         <Class IRI="/0000317"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Metastatic"/>
-        <Class IRI="/0000329"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Untreated"/>
@@ -922,10 +849,6 @@
         <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Eligibility"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Etoposide"/>
         <Class IRI="/0000090"/>
     </SubClassOf>
@@ -949,10 +872,6 @@
         <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fitness"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Good"/>
         <Class IRI="#RiskStratification"/>
     </SubClassOf>
@@ -965,24 +884,12 @@
         <Class IRI="#MedicationAdministration"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Localized"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LocallyAdvanced"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#LocoregionalAnticancerTreatmentRegimen"/>
         <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MedicationAdministration"/>
         <Class IRI="#Component"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Metastatic"/>
-        <Class IRI="#ExtentOfDisease"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mitoxantrone"/>
@@ -1012,26 +919,6 @@
         <Class IRI="/0000084"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Refractory"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Relapsed"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Resectable"/>
-        <Class IRI="#Resectability"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Resistance"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sensitivity"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Systematic"/>
         <Class IRI="#AntiCancer"/>
     </SubClassOf>
@@ -1058,20 +945,12 @@
         <Class IRI="#Systematic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tolerance"/>
-        <Class IRI="#PatientPhenotype"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#UltraHighRisk"/>
         <Class IRI="#RiskStratification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Unfavorable"/>
         <Class IRI="#RiskStratification"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Unresectable"/>
-        <Class IRI="#Resectability"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Untreated"/>
@@ -1639,10 +1518,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000289"/>
-        <Class IRI="#Eligibility"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/0000290"/>
         <Class IRI="/0000135"/>
     </SubClassOf>
@@ -1686,29 +1561,8 @@
     <SubClassOf>
         <Class IRI="/0000301"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000305"/>
-            <Class IRI="#PatientPhenotype"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000301"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000306"/>
             <Class IRI="#Histology"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000301"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000307"/>
-            <Class IRI="#ExtentOfDisease"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000301"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000308"/>
-            <Class IRI="#Resectability"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1763,30 +1617,6 @@
         <Class IRI="/0000323"/>
         <Class IRI="/0000078"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000324"/>
-        <Class IRI="#Eligibility"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000325"/>
-        <Class IRI="#Tolerance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000326"/>
-        <Class IRI="#Tolerance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000327"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000328"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000329"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </SubClassOf>
     <DisjointClasses>
         <Class IRI="/0000136"/>
         <Class IRI="/0000137"/>
@@ -1813,10 +1643,6 @@
     <DisjointClasses>
         <Class IRI="/0000293"/>
         <Class IRI="/0000294"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="/0000325"/>
-        <Class IRI="/0000326"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#AAML_1031_ARM_A_high-risk_Induction_1"/>
@@ -2435,10 +2261,6 @@
         <ObjectProperty IRI="#hasMedicationAdministration"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000305"/>
-        <ObjectProperty IRI="/0000304"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000306"/>
         <ObjectProperty IRI="/0000304"/>
     </SubObjectPropertyOf>
@@ -2514,10 +2336,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000305"/>
-        <Class IRI="/0000301"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000306"/>
@@ -2598,20 +2416,8 @@
         <Class IRI="/0000084"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000305"/>
-        <Class IRI="#PatientPhenotype"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/0000306"/>
         <Class IRI="#Histology"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000307"/>
-        <Class IRI="#ExtentOfDisease"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000308"/>
-        <Class IRI="#Resectability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000313"/>
@@ -2817,11 +2623,6 @@
         <Literal xml:lang="en">DaunorubicinAdministration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Eligibility</IRI>
-        <Literal>Statement of treatments that the patient might be qualified to have, such as platinum-eligible or non-eligible</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#EtoposideAdministration</IRI>
         <Literal xml:lang="en">EtoposideAdministration</Literal>
@@ -2868,26 +2669,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
-        <IRI>#ExtentOfDisease</IRI>
-        <Literal>An assessment of the breadth of the spread of disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ExtentOfDisease</IRI>
-        <Literal>ExtentOfDisease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Fitness</IRI>
-        <Literal>Summary of the patient&apos;s overall state of health</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Fitness</IRI>
-        <Literal>Fitness</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
         <IRI>#Histology</IRI>
         <Literal>The cells of origin and the type of cancer, as determined through histological examination</Literal>
     </AnnotationAssertion>
@@ -2898,38 +2679,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Localized</IRI>
-        <Literal>Disease limited to a specific region of the body.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Localized</IRI>
-        <Literal>Localized</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#LocallyAdvanced</IRI>
-        <Literal>Disease that is advanced but not widespread</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LocallyAdvanced</IRI>
-        <Literal>LocallyAdvanced</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
         <IRI>#LocoregionalAnticancerTreatmentRegimen</IRI>
         <Literal>A locoregional anticancer treatment regimen has a localized anticancer component instead of a systemic component Otherwise, it follows the same rules as the SACT regimens described above. Locoregional anticancer treatment regimens can and do contain medications, which are delivered in such a manner that they do not distribute throughout the body. Examples include hepatic arterial infusional chemotherapy (HAIC), intraperitoneal chemotherapy, and isolated limb perfusion, and radiation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Metastatic</IRI>
-        <Literal>Disease that has spread throughout the body</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Metastatic</IRI>
-        <Literal>Metastatic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2968,11 +2719,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
-        <IRI>#PatientPhenotype</IRI>
-        <Literal>Descriptions of factors of patient state that inform prognosis and, by extension, the treatment seetting and intent.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
         <IRI>#Portion</IRI>
         <Literal>A portion is a sequential subsection of a regimen, such as the AC portion and the T portion of sequential AC-T. A portion must fit within one cycle/course.</Literal>
     </AnnotationAssertion>
@@ -2980,11 +2726,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Portion</IRI>
         <Literal>Needs clarification (12 July 2023)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Resistance</IRI>
-        <Literal>Indication that a patient does not respond to a given treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
@@ -2998,18 +2739,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Sensitivity</IRI>
-        <Literal>Indication that a patient  responds to a given treatment</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
         <IRI>#SystematicAnticancerTreatmentRegimen</IRI>
         <Literal>A systemic anticancer treatment (SACT) regimen is a grouping of medications, at least one of which must have a systemic anticancer intent/mechanism of action. In this context, “systemic” refers to medications administered intravenously, as opposed to localized therapies administered to a specific body part.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>#Tolerance</IRI>
-        <Literal>Description of a patient&apos;s ability to take a chemotherapeautic agent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
@@ -3698,16 +3429,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000289</IRI>
-        <Literal>Indication that the patient is a candidate for platinum therapies</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000289</IRI>
-        <Literal xml:lang="en">PlatinumEligible</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
         <IRI>/0000290</IRI>
         <Literal>Treatments given with the goal of extedning life, without the hope of removing the disease.</Literal>
     </AnnotationAssertion>
@@ -3785,11 +3506,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000304</IRI>
         <Literal xml:lang="en">hasSettingComponent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000305</IRI>
-        <Literal xml:lang="en">hasPhenotype</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3916,61 +3632,6 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000323</IRI>
         <Literal xml:lang="en">Peri-Operative</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000324</IRI>
-        <Literal>Indication that the patient is not a candidate for platinum therapies</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000324</IRI>
-        <Literal xml:lang="en">PlatinumIneligible</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000325</IRI>
-        <Literal>Indication that a patient can safely take Platinum therapies.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000325</IRI>
-        <Literal xml:lang="en">PlatinumTolerant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000326</IRI>
-        <Literal>Indication that a patient is not able to take Platinum therapies without adverse reaction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000326</IRI>
-        <Literal xml:lang="en">PlatinumIntolerant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000327</IRI>
-        <Literal>Disease that is local or somwhat locally advanced.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000327</IRI>
-        <Literal xml:lang="en">Early</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000328</IRI>
-        <Literal>Most locally advanced disease and metastatic disease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000328</IRI>
-        <Literal xml:lang="en">Late</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000329</IRI>
-        <Literal xml:lang="en">Widespread</Literal>
     </AnnotationAssertion>
 </Ontology>
 
