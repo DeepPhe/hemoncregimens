@@ -382,6 +382,9 @@
         <ObjectProperty IRI="#hasSupportiveMedicationAdministration"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTreatment"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/0000077"/>
     </Declaration>
     <Declaration>
@@ -978,10 +981,6 @@
     <SubClassOf>
         <Class IRI="#indeterminate"/>
         <Class IRI="#line"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#line"/>
-        <Class IRI="#TreatmentExposure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#/2"/>
@@ -2142,7 +2141,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMedicationAdministration"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhase"/>
@@ -2186,7 +2185,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000116"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000116"/>
@@ -2198,11 +2197,19 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000121"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000122"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000125"/>
+        <ObjectProperty IRI="/0000144"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/0000128"/>
+        <ObjectProperty IRI="/0000144"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000129"/>
@@ -2278,15 +2285,15 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000313"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000319"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000320"/>
-        <ObjectProperty IRI="/0000120"/>
+        <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="/0000184"/>
@@ -2324,7 +2331,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000120"/>
-        <Class IRI="/0000119"/>
+        <Class IRI="#line"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000156"/>
@@ -2397,7 +2404,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000120"/>
-        <Class IRI="/0000117"/>
+        <Class IRI="#TreatmentExposure"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000122"/>
@@ -2669,6 +2676,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
+        <IRI>#Exposed</IRI>
+        <Literal>Indication that a patient has received some prior treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Exposed</IRI>
+        <Literal>Exposed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>#Histology</IRI>
         <Literal>The cells of origin and the type of cancer, as determined through histological examination</Literal>
     </AnnotationAssertion>
@@ -2744,6 +2761,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
+        <IRI>#TreatmentExposure</IRI>
+        <Literal>History of a patient&apos;s treatments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TreatmentExposure</IRI>
+        <Literal>TreatmentExposure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Untreated</IRI>
+        <Literal>Untreated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
         <IRI>#cycle</IRI>
         <Literal>A cycle or course is a regimen  that is delivered – either by a clinician, patient, or caregiver - on specific days, often in a specific sequence, during a named phase of treatment. A cycle is typically the least divisible unit.</Literal>
     </AnnotationAssertion>
@@ -2751,6 +2783,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#cycle</IRI>
         <Literal>Cycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#determinate</IRI>
+        <Literal>A line of therapy with a defined end point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#determinate</IRI>
+        <Literal>Determinate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2761,6 +2803,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasDose</IRI>
         <Literal xml:lang="en">hasDose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#indeterminate</IRI>
+        <Literal>A line of therapy that will continue until evidence of either intolerance or progression/lack of progression is observed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#indeterminate</IRI>
+        <Literal>Indeterminate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>#line</IRI>
+        <Literal>A regimen or protocol applied at a particular time in the history of a patient&apos;s treatment.  Generally referred to with an ordinal desgination - &quot;first line&quot;, &quot;second line&quot;, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#line</IRI>
+        <Literal>Line</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
@@ -3577,6 +3639,11 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000315</IRI>
         <Literal xml:lang="en">Drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/0000314"/>
+        <IRI>/0000316</IRI>
+        <Literal>Indication that a patient has not previously received treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
