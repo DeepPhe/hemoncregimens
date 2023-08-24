@@ -469,21 +469,6 @@
         <ObjectProperty IRI="/0000296"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/0000304"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000306"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000307"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000308"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000309"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/0000313"/>
     </Declaration>
     <Declaration>
@@ -602,6 +587,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/0000183"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#dbxref"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="/0000314"/>
@@ -1558,13 +1546,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000301"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000306"/>
-            <Class IRI="#Histology"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/0000302"/>
         <Class IRI="/0000301"/>
     </SubClassOf>
@@ -2268,22 +2249,6 @@
         <ObjectProperty IRI="#hasMedicationAdministration"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000306"/>
-        <ObjectProperty IRI="/0000304"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000307"/>
-        <ObjectProperty IRI="/0000304"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000308"/>
-        <ObjectProperty IRI="/0000304"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000309"/>
-        <ObjectProperty IRI="/0000304"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000313"/>
         <ObjectProperty IRI="#hasTreatment"/>
     </SubObjectPropertyOf>
@@ -2343,18 +2308,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000306"/>
-        <Class IRI="/0000301"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000307"/>
-        <Class IRI="/0000301"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000308"/>
-        <Class IRI="/0000301"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000313"/>
@@ -2421,10 +2374,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000306"/>
-        <Class IRI="#Histology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000313"/>
@@ -2815,9 +2764,14 @@
         <Literal>Indeterminate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#dbxref"/>
+        <IRI>#line</IRI>
+        <Literal>C133518</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
         <IRI>#line</IRI>
-        <Literal>A regimen or protocol applied at a particular time in the history of a patient&apos;s treatment.  Generally referred to with an ordinal desgination - &quot;first line&quot;, &quot;second line&quot;, etc.</Literal>
+        <Literal>As defined by the NCI Thesaurus, as line of therapy is &quot;the sequence of therapies administered to a patient.&quot; (C133518). In the ideal case, a line of therapy will correspond to a specific protocol.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3563,31 +3517,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000303</IRI>
         <Literal xml:lang="en">IncurableSetting</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000304</IRI>
-        <Literal xml:lang="en">hasSettingComponent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000306</IRI>
-        <Literal xml:lang="en">hasHistology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000307</IRI>
-        <Literal xml:lang="en">hasExtentOfDisease</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000308</IRI>
-        <Literal xml:lang="en">hasResectability</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000309</IRI>
-        <Literal xml:lang="en">hasRiskStratification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="/0000314"/>
