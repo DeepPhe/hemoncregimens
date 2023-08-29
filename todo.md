@@ -1,3 +1,15 @@
+* review structure as compared to midas data or others
+** look at xml renderings...
+
+** correct url   -- currently prefix is off. Can I fix that? -edit file
+
+** numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
+
+* review other structures of inheritance.
+** regimens being subclass of parts pr phases
+** others?
+
+
 populate definitions
   - phases onwards.
 
