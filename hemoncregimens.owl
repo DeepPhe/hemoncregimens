@@ -1,17 +1,23 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243"
+     xml:base="http://hemoncregimens.org/hemoncregimens"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243">
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/9/untitled-ontology-243/"/>
+     ontologyIRI="http://hemoncregimens.org/hemoncregimens"
+     versionIRI="http://hemoncregimens.org/hemoncreigmens/v2023-09-11">
+    <Prefix name="" IRI="http://hemoncregimens.org/hemoncregimens#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="hemoncregimens" IRI="http://hemoncregimens.org/hemoncregimens"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>v2023-09-11</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#AAML_1031_ARM_A_high-risk_Induction_1"/>
     </Declaration>
@@ -1082,7 +1088,7 @@
         <Class IRI="/0000084"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasPhase"/>
-            <Class IRI="/0000078"/>
+            <Class IRI="/0000228"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1370,7 +1376,7 @@
         <Class IRI="/0000228"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000184"/>
-            <Class IRI="/0000232"/>
+            <Class IRI="/0000228"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2300,10 +2306,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000156"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000132"/>
-            <Class IRI="/0000155"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="/Protocol"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000205"/>
@@ -2370,6 +2373,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000145"/>
         <Class IRI="/0000141"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/0000156"/>
+        <Class IRI="/0000155"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/0000205"/>
