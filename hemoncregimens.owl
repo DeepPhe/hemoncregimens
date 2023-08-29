@@ -10,6 +10,7 @@
     <Prefix name="" IRI="http://hemoncregimens.org/hemoncregimens#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
@@ -74,6 +75,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HEMONC0000330"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Histology"/>
@@ -217,9 +221,6 @@
         <Class IRI="/0000150"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/0000155"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/0000162"/>
     </Declaration>
     <Declaration>
@@ -355,6 +356,9 @@
         <Class IRI="/0000323"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#HEMONC0000331"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasAnticancerMedication"/>
     </Declaration>
     <Declaration>
@@ -398,9 +402,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000096"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/0000098"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/0000110"/>
@@ -451,9 +452,6 @@
         <ObjectProperty IRI="/0000146"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/0000156"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/0000184"/>
     </Declaration>
     <Declaration>
@@ -496,9 +494,6 @@
         <DataProperty IRI="/0000075"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/0000099"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="/0000152"/>
     </Declaration>
     <Declaration>
@@ -512,9 +507,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="/0000239"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#COG_AAML_1031"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Cytarabine_10day100mg"/>
@@ -574,9 +566,6 @@
         <NamedIndividual IRI="#5day50mg"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Cytarabine_age3+_70ml"/>
     </Declaration>
     <Declaration>
@@ -598,7 +587,7 @@
         <AnnotationProperty IRI="#dbxref"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="/0000314"/>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Exposed"/>
@@ -990,7 +979,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
-        <Class IRI="/0000215"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HEMONC0000331"/>
+            <Class IRI="/0000215"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
@@ -1021,13 +1013,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#COG_AAML1031_arm_A_(high-risk)"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000156"/>
-            <Class IRI="/0000215"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/Protocol"/>
         <Class IRI="/0000117"/>
     </SubClassOf>
@@ -1036,13 +1021,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000122"/>
             <Class IRI="/0000119"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Protocol"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000156"/>
-            <Class IRI="/0000155"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1104,13 +1082,6 @@
             <ObjectProperty IRI="/0000313"/>
             <Class IRI="#Component"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000084"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="/0000099"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000090"/>
@@ -1182,13 +1153,6 @@
         <Class IRI="/0000135"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/0000155"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000077"/>
-            <Class IRI="/0000074"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/0000162"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="/0000163"/>
@@ -1208,7 +1172,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000214"/>
-        <Class IRI="/0000215"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HEMONC0000331"/>
+            <Class IRI="/0000215"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000214"/>
@@ -1241,20 +1208,13 @@
     <SubClassOf>
         <Class IRI="/0000214"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="/0000156"/>
-            <Class IRI="/0000215"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/0000214"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="/0000207"/>
             <Class IRI="/0000234"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000215"/>
-        <Class IRI="/0000155"/>
+        <Class IRI="#HEMONC0000330"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/0000216"/>
@@ -1858,35 +1818,15 @@
         <Class IRI="/0000074"/>
         <NamedIndividual IRI="/0000183"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000077"/>
-        <NamedIndividual IRI="#COG_AAML_1031"/>
-        <NamedIndividual IRI="/0000183"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/0000156"/>
-        <NamedIndividual IRI="#COG_AAML_1031_Arm_C_(FLT3/ITD+)"/>
-        <NamedIndividual IRI="#COG_AAML_1031"/>
-    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Cytarabine_10day100mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_10day100mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Cytarabine_4day1000mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_4day1000mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
@@ -1894,29 +1834,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_4day33mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Cytarabine_5day1000mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_5day1000mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_5day33mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">33</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_5day33mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAge"/>
@@ -1944,19 +1864,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_day1-2-8-9_100mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Cytarabine_day1-2-8-9_3000mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Cytarabine_day1-2-8-9_3000mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
@@ -1964,37 +1874,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Etoposide_5day100mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Etoposide_5day150mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Etoposide_5day150mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Etoposide_5day3.3mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.3</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Etoposide_5day3.3mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
-        <NamedIndividual IRI="#Etoposide_5day5mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
         <NamedIndividual IRI="#Etoposide_5day5mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
     </DataPropertyAssertion>
@@ -2004,19 +1889,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Mitoxantrone_day3-6_0.4mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Mitoxantrone_day3-6_12mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Mitoxantrone_day3-6_12mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
@@ -2024,29 +1899,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#10day3.3mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#5day1.7mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#5day1.7mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#5day50mg"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#5day50mg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
@@ -2059,19 +1919,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Elspar_day2-9_200IU/kg"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Elspar_day2-9_6000IU/m2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Elspar_day2-9_6000IU/m2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
@@ -2079,19 +1929,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Erwinaze_day2-9_25000IU/m2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasDose"/>
         <NamedIndividual IRI="#Erwinaze_day2-9_830IU/m2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">830</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="/0000099"/>
-        <NamedIndividual IRI="#Erwinaze_day2-9_830IU/m2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="/0000075"/>
@@ -2109,14 +1949,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCourse"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasDurationDays"/>
-        <ObjectProperty IRI="/0000098"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasDurationWeeks"/>
-        <ObjectProperty IRI="/0000098"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasLocalTherapyMedication"/>
@@ -2152,10 +1984,6 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000096"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000098"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2223,10 +2051,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="/0000156"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="/0000184"/>
         <ObjectProperty IRI="#hasPhase"/>
     </SubObjectPropertyOf>
@@ -2281,6 +2105,10 @@
         <ObjectProperty IRI="/0000113"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HEMONC0000331"/>
+        <Class IRI="/Protocol"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMedicationAdministration"/>
         <Class IRI="/0000084"/>
     </ObjectPropertyDomain>
@@ -2305,10 +2133,6 @@
         <Class IRI="#line"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/0000156"/>
-        <Class IRI="/Protocol"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
     </ObjectPropertyDomain>
@@ -2316,6 +2140,10 @@
         <ObjectProperty IRI="/0000313"/>
         <Class IRI="/0000084"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HEMONC0000331"/>
+        <Class IRI="#HEMONC0000330"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCourse"/>
         <Class IRI="/0000084"/>
@@ -2344,13 +2172,6 @@
         <Class IRI="/0000095"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000098"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="/0000099"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/0000113"/>
         <Class IRI="/0000109"/>
     </ObjectPropertyRange>
@@ -2375,10 +2196,6 @@
         <Class IRI="/0000141"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/0000156"/>
-        <Class IRI="/0000155"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/0000205"/>
         <Class IRI="/0000084"/>
     </ObjectPropertyRange>
@@ -2396,10 +2213,6 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/0000075"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="/0000099"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -2430,13 +2243,6 @@
         <DataSomeValuesFrom>
             <DataProperty IRI="/0000075"/>
             <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="/0000099"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="/0000099"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
         </DataSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -2476,7 +2282,17 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal xml:lang="en">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:IAO_0000115</AbbreviatedIRI>
+        <Literal>definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#Component</IRI>
         <Literal>A component is the base unit of a drug or procedure. A component might have additional characteristics describing the magnitude or means of delivery.</Literal>
     </AnnotationAssertion>
@@ -2631,7 +2447,7 @@
         <Literal xml:lang="en">Etoposide_5day5mg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#Exposed</IRI>
         <Literal>Indication that a patient has received some prior treatment</Literal>
     </AnnotationAssertion>
@@ -2641,7 +2457,22 @@
         <Literal>Exposed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>#HEMONC0000330</IRI>
+        <Literal>A formal document developed by the sponsor of a study and may or may not be publicly available; for example, study protocols developed by pharmaceutical industry sponsors often have extensive redactions even when they are available as supplementary material to a published paper. Notably, regulatory agencies such as the FDA have access to full versions of study protocols. For the public, portions of study protocols are usually available at ClinicalTrials.gov or another clinical trials registry, and in one or more papers, may involve multiple treatment protocols.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HEMONC0000330</IRI>
+        <Literal xml:lang="en">StudyProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HEMONC0000331</IRI>
+        <Literal xml:lang="en">hasStudyProtocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#Histology</IRI>
         <Literal>The cells of origin and the type of cancer, as determined through histological examination</Literal>
     </AnnotationAssertion>
@@ -2651,7 +2482,7 @@
         <Literal>Histology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#LocoregionalAnticancerTreatmentRegimen</IRI>
         <Literal>A locoregional anticancer treatment regimen has a localized anticancer component instead of a systemic component Otherwise, it follows the same rules as the SACT regimens described above. Locoregional anticancer treatment regimens can and do contain medications, which are delivered in such a manner that they do not distribute throughout the body. Examples include hepatic arterial infusional chemotherapy (HAIC), intraperitoneal chemotherapy, and isolated limb perfusion, and radiation</Literal>
     </AnnotationAssertion>
@@ -2681,7 +2512,7 @@
         <Literal xml:lang="en">Mitoxantrone_day3-6_12mg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#Part</IRI>
         <Literal>A part is a sequential subsection of a protocol (i.e., a regimen or procedure),  which is usually synonymous with the phase of treatment in which it occurs. When parts occur within the same phase, they are usually referred to as part 1, part 2 or part A, part B or part I, part II, etc. A part is a regimen (or procedure).</Literal>
     </AnnotationAssertion>
@@ -2691,7 +2522,7 @@
         <Literal>*NEEDS CLARIFICATION*</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#Portion</IRI>
         <Literal>A portion is a sequential subsection of a regimen, such as the AC portion and the T portion of sequential AC-T. A portion must fit within one cycle/course.</Literal>
     </AnnotationAssertion>
@@ -2701,7 +2532,7 @@
         <Literal>Needs clarification (12 July 2023)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#RiskStratification</IRI>
         <Literal>Description of a patient&apos;s prognosis</Literal>
     </AnnotationAssertion>
@@ -2711,12 +2542,12 @@
         <Literal>RiskStratification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#SystematicAnticancerTreatmentRegimen</IRI>
         <Literal>A systemic anticancer treatment (SACT) regimen is a grouping of medications, at least one of which must have a systemic anticancer intent/mechanism of action. In this context, “systemic” refers to medications administered intravenously, as opposed to localized therapies administered to a specific body part.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#TreatmentExposure</IRI>
         <Literal>History of a patient&apos;s treatments</Literal>
     </AnnotationAssertion>
@@ -2731,7 +2562,7 @@
         <Literal>Untreated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#cycle</IRI>
         <Literal>A cycle or course is a regimen  that is delivered – either by a clinician, patient, or caregiver - on specific days, often in a specific sequence, during a named phase of treatment. A cycle is typically the least divisible unit.</Literal>
     </AnnotationAssertion>
@@ -2741,7 +2572,7 @@
         <Literal>Cycle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#determinate</IRI>
         <Literal>A line of therapy with a defined end point</Literal>
     </AnnotationAssertion>
@@ -2761,7 +2592,7 @@
         <Literal xml:lang="en">hasDose</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#indeterminate</IRI>
         <Literal>A line of therapy that will continue until evidence of either intolerance or progression/lack of progression is observed.</Literal>
     </AnnotationAssertion>
@@ -2776,7 +2607,7 @@
         <Literal>C133518</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#line</IRI>
         <Literal>As defined by the NCI Thesaurus, as line of therapy is &quot;the sequence of therapies administered to a patient.&quot; (C133518). In the ideal case, a line of therapy will correspond to a specific protocol.</Literal>
     </AnnotationAssertion>
@@ -2786,12 +2617,12 @@
         <Literal>Line</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#/2</IRI>
         <Literal>ICD-O Behavior code corresponding to In situ neoplasms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#/3</IRI>
         <Literal>ICD-O behavior code corresponding to Malignant neoplasms, stated or presumed to be primary</Literal>
     </AnnotationAssertion>
@@ -2886,7 +2717,7 @@
         <Literal xml:lang="en">Erwinaze_day2-9_830IU/m2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/Protocol</IRI>
         <Literal>A treatment protocol (informally known as a protocol) is an intentional, ordered sequence of one or more regimens and/or procedures.  Although each regimen occurs within a specific phase of treatment, a protocol might span multiple phases.   A protocol cannot cross lines of therapy. Schema is often used as a synonym for a treatment protocol.</Literal>
     </AnnotationAssertion>
@@ -2916,7 +2747,7 @@
         <Literal xml:lang="en">hasPublication</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000078</IRI>
         <Literal>A phase of treatment is an indication of when in the care process a patient is, within a line of therapy/treatment exposure. When a treatment plan is multi-phasic, it typically follows a “beginning-middle-end” pattern. Patients do not usually progress from one phase to the next without some type of re-evaluation.</Literal>
     </AnnotationAssertion>
@@ -2926,7 +2757,7 @@
         <Literal xml:lang="en">Phase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000084</IRI>
         <Literal>A regimen is a concurrent group of components designed to be synergistic. Regimens may be conducted over some # of days or weeks, although some may continue indefinitely</Literal>
     </AnnotationAssertion>
@@ -2976,21 +2807,6 @@
         <Literal xml:lang="en">Biomarker</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000098</IRI>
-        <Literal xml:lang="en">hasDuration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/0000099</IRI>
-        <Literal xml:lang="en">unit: day</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000099</IRI>
-        <Literal xml:lang="en">hasDuration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/0000109</IRI>
         <Literal>As defined in Drummon, et al. Putting Owl In Order: Patterns for Sequences in OWL</Literal>
@@ -3026,7 +2842,7 @@
         <Literal xml:lang="en">hasRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000117</IRI>
         <Literal>Treatments are actions taken to remove, ameliorate, or otherwise modify the course of disease.</Literal>
     </AnnotationAssertion>
@@ -3036,7 +2852,7 @@
         <Literal xml:lang="en">Treatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000118</IRI>
         <Literal>A procedure is an invasive therapy that occurs over minutes to hours, performed by a trained operator (e.g., surgeon; interventional radiologist). The effect of the therapy is simultaneous or near simultaneous. In the cancer context, the intent of a procedure is to remove, burn, freeze, deprive, or directly poison cancer tissue.</Literal>
     </AnnotationAssertion>
@@ -3101,7 +2917,7 @@
         <Literal xml:lang="en">Indeterminate Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000134</IRI>
         <Literal>A regimen that does not have a specific endpoint.</Literal>
     </AnnotationAssertion>
@@ -3111,7 +2927,7 @@
         <Literal xml:lang="en">Indefinite Regimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000135</IRI>
         <Literal>The stated goal of the anticancer treatment, conditioned on the setting in which treatment takes place</Literal>
     </AnnotationAssertion>
@@ -3121,7 +2937,7 @@
         <Literal xml:lang="en">Intent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000136</IRI>
         <Literal>Treatments intended to cure the cancer</Literal>
     </AnnotationAssertion>
@@ -3131,7 +2947,7 @@
         <Literal xml:lang="en">Curative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000137</IRI>
         <Literal>Treatments given to imrpove the quality of life.</Literal>
     </AnnotationAssertion>
@@ -3184,21 +3000,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/0000154</IRI>
         <Literal xml:lang="en">isDeterminate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
-        <IRI>/0000155</IRI>
-        <Literal>A study protocol is a formal document developed by the sponsor of a study and may or may not be publicly available; for example, study protocols developed by pharmaceutical industry sponsors often have extensive redactions even when they are available as supplementary material to a published paper. Notably, regulatory agencies such as the FDA have access to full versions of study protocols. For the public, portions of study protocols are usually available at ClinicalTrials.gov or another clinical trials registry, and in one or more papers, may involve multiple treatment protocols.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000155</IRI>
-        <Literal xml:lang="en">StudyProtocol</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000156</IRI>
-        <Literal xml:lang="en">hasStudyProtocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3271,7 +3072,7 @@
         <Literal xml:lang="en">UpfrontInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000218</IRI>
         <Literal>Used almost exclusively in neuroblastoma to refer to a phase after consolidation</Literal>
     </AnnotationAssertion>
@@ -3286,7 +3087,7 @@
         <Literal xml:lang="en">Continuation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000220</IRI>
         <Literal>Used almost exclusively in neuroblastoma to refer to a phase after consolidation</Literal>
     </AnnotationAssertion>
@@ -3296,7 +3097,7 @@
         <Literal xml:lang="en">PostConsolidation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000221</IRI>
         <Literal>Treatment given as follow-on to the induction. Can be planned, conditional, or at any point after the induction. Loosely, salvage induction is often called re-induction, since the goal is to re-induce remission.</Literal>
     </AnnotationAssertion>
@@ -3306,7 +3107,7 @@
         <Literal xml:lang="en">Re-Induction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000222</IRI>
         <Literal>An intensification occurring after some gap in time, usually after consolidation. Also sometimes called late intensification</Literal>
     </AnnotationAssertion>
@@ -3316,7 +3117,7 @@
         <Literal xml:lang="en">DelayedIntensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000223</IRI>
         <Literal>Interventions with the intent of killing all cancer cells. These are almost always procedures such as surgery, or a locoregional radiation concurrent with systemic chemotherapy in the definitive setting (“definitive chemoradiotherapy”). Medication-only approaches are nearly never called definitive.</Literal>
     </AnnotationAssertion>
@@ -3326,7 +3127,7 @@
         <Literal xml:lang="en">Definitive</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000224</IRI>
         <Literal>Chemotherapy and/or radiation given when subsequent definitive surgery is assumed</Literal>
     </AnnotationAssertion>
@@ -3336,7 +3137,7 @@
         <Literal xml:lang="en">NeoAdjuvant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000225</IRI>
         <Literal>Treatment (usually chemotherapy and/or radiation) after definitive surgery</Literal>
     </AnnotationAssertion>
@@ -3346,7 +3147,7 @@
         <Literal xml:lang="en">Adjuvant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000226</IRI>
         <Literal>A special case of maintenance that occurs at some point other than the end of the line of treatment. For example, between early and late intensification</Literal>
     </AnnotationAssertion>
@@ -3356,7 +3157,7 @@
         <Literal xml:lang="en">InterimMaintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000227</IRI>
         <Literal>Treatment intended to sustain gains from earlier treatments that have led to a desirable response such as complete or partial remission or stable disease. Maintenance is typically the last phase in a line.</Literal>
     </AnnotationAssertion>
@@ -3366,7 +3167,7 @@
         <Literal xml:lang="en">Maintenance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000228</IRI>
         <Literal>Increasing the strength of a prior treatment – usually in pediatrics. Consolidation and intensification are mutually exclusive. When there is more than one intensification phase in a protocol, the first is also sometimes called early intensification.</Literal>
     </AnnotationAssertion>
@@ -3376,7 +3177,7 @@
         <Literal xml:lang="en">Intensification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000229</IRI>
         <Literal>Intensification of treatment designed to bolster a promising response to induction. Generally weaker than initial treatment with some very notable exceptions – autologous and allogeneic stem cell transplants. Treatment given after definitive chemoradiotherapy is also often termed consolidation.</Literal>
     </AnnotationAssertion>
@@ -3391,7 +3192,7 @@
         <Literal xml:lang="en">PreInduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000231</IRI>
         <Literal>Treatment given before induction. Also referred to as pre-induction</Literal>
     </AnnotationAssertion>
@@ -3401,7 +3202,7 @@
         <Literal xml:lang="en">PrePhase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000232</IRI>
         <Literal>The initial therapy used to shrink a tumor.  Shorthand for “remission induction” which reflects the somewhat-current thinking that the only chance for cure for certain cancers is achieving a complete response to the first phase of therapy. Conversely, failure to achieve remission with induction therapy usually leads to the abandonment of that line of therapy. The waters are now considerably muddied by the emerging concept of minimal residual disease (MRD). Induction followed by surgery would retrospectively be considered neoadjuvant, even when the possibility of surgery was unclear at the time of induction (see borderline resectability, above).</Literal>
     </AnnotationAssertion>
@@ -3451,7 +3252,7 @@
         <Literal xml:lang="en">CytarabineAdministration-CNS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000290</IRI>
         <Literal>Treatments given with the goal of extedning life, without the hope of removing the disease.</Literal>
     </AnnotationAssertion>
@@ -3461,7 +3262,7 @@
         <Literal xml:lang="en">NonCurative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000291</IRI>
         <Literal>Tratements lacking specifically-defined goals</Literal>
     </AnnotationAssertion>
@@ -3496,7 +3297,7 @@
         <Literal xml:lang="en">hasSubsequentMedicationAdministration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000301</IRI>
         <Literal>The time, place, and consequences in which treatment occurrs</Literal>
     </AnnotationAssertion>
@@ -3506,7 +3307,7 @@
         <Literal xml:lang="en">Setting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000302</IRI>
         <Literal>Circumstances associated with curable cancer</Literal>
     </AnnotationAssertion>
@@ -3516,7 +3317,7 @@
         <Literal xml:lang="en">CurableSetting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000303</IRI>
         <Literal>Circumstances associated with a cancer that is not curable.</Literal>
     </AnnotationAssertion>
@@ -3526,7 +3327,7 @@
         <Literal xml:lang="en">IncurableSetting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000310</IRI>
         <Literal>A multimodal regimen is a combination of a systematic anticancer regimen and a locoregional 
 treatment regimen; thus a multimodal regimen must have both a systematic treatment component and a locoregional treatment component.</Literal>
@@ -3537,7 +3338,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">MultimodalRegimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000311</IRI>
         <Literal>Chemotherapy and/or chemoradiotherapy that is given both before and after a surgical procedure, usually according to the same or a very similar schedule</Literal>
     </AnnotationAssertion>
@@ -3547,7 +3348,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">PeriOperative</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000312</IRI>
         <Literal>A preplanned usually relatively short treatment exposure which forms the basis of a conditional therapy adaptation. Used almost exclusively in pediatric sarcoma</Literal>
     </AnnotationAssertion>
@@ -3562,12 +3363,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">hasTreatmentComponent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/0000314</IRI>
-        <Literal xml:lang="en">definition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000315</IRI>
         <Literal>A drug is a pharmaceutical intervention. Each instance of a drug as a treatment component will be associated with a signature which specifies the dose, route, frequency, and other details.</Literal>
     </AnnotationAssertion>
@@ -3577,7 +3373,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">Drug</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000316</IRI>
         <Literal>Indication that a patient has not previously received treatment</Literal>
     </AnnotationAssertion>
@@ -3592,7 +3388,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">PreviouslyTreated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000318</IRI>
         <Literal>A cycle or course is a regimen  that is delivered – either by a clinician, patient, or caregiver - on specific days, often in a specific sequence, during a named phase of treatment. A course is intended to be given once, but might be repeated.</Literal>
     </AnnotationAssertion>
@@ -3612,7 +3408,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">hasSecondaryTreatment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000321</IRI>
         <Literal>Phases in locoregional treatments intended to completely destroy all cancer cells.</Literal>
     </AnnotationAssertion>
@@ -3622,7 +3418,7 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
         <Literal xml:lang="en">Definitive</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="/0000314"/>
+         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>/0000322</IRI>
         <Literal>Phases in treatments that are anot localzized to a specific body region</Literal>
     </AnnotationAssertion>
@@ -3638,7 +3434,4 @@ treatment regimen; thus a multimodal regimen must have both a systematic treatme
     </AnnotationAssertion>
 </Ontology>
 
-
-
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

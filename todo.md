@@ -1,7 +1,18 @@
 * review structure as compared to midas data or others
-** look at xml renderings...
-*** look at item 0000156
+** some problem with 000075 000099   - hasDOI? has publication?
+*** fix 0000075 - cardinality
+*** re-add publication and has doi
+*** re-add has duration, has_dayas, etc.
+*** hmm. having duration in instances is not working well. Deal with instances asnd turn them to classes?
+
 ** numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
+
+
+
+** what is the right scheme?
+** how to get everything to the right scheme?
+
+*** histology needs work
 
 * review other structures of inheritance.
 ** regimens being subclass of parts pr phases
