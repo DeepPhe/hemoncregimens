@@ -1,19 +1,10 @@
 * review structure as compared to midas data or others
-** some problem with 000075 000099   - hasDOI? has publication?
-*** fix 0000075 - cardinality
-*** re-add publication and has doi
 *** re-add has duration, has_dayas, etc.
 *** hmm. having duration in instances is not working well. Deal with instances asnd turn them to classes?
-
 ** numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
-
-
-
 ** what is the right scheme?
 ** how to get everything to the right scheme?
-
 *** histology needs work
-
 * review other structures of inheritance.
 ** regimens being subclass of parts pr phases
 ** others?
@@ -127,3 +118,11 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 - run pellet and look at reasoning errors.a
 - remove instances
 *** correct url   -- currently prefix is off. Can I fix that? -edit file
+** some problem with 000075 000099   - hasDOI? has publication?
+- aplenc has Doi...10.3324/haematol.2019.220962
+*** fix 0000075 - cardinality
+*** re-add publication and has doi
+** some problem with 000075 000099   - hasDOI? has publication?
+- aplenc has Doi...10.3324/haematol.2019.220962
+*** fix 0000075 - cardinality
+*** re-add publication and has doi
