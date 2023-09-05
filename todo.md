@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * review structure as compared to midas data or others
 *** re-add has duration, has_dayas, etc.
 *** hmm. having duration in instances is not working well. Deal with instances asnd turn them to classes?
@@ -8,10 +9,22 @@
 * review other structures of inheritance.
 ** regimens being subclass of parts pr phases
 ** others?
+=======
+*populate definitions
+  - intent onwards
+  
+
+* histology needs work
+
+* numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
+** what is the right scheme?
+** how to get everything to the right scheme?
 
 
-populate definitions
-  - phases onwards.
+* Fix instances
+>>>>>>> 75876c8 (further cleanup)
+
+
 
 
 - populate the induction, intensification, etc. from  AAML with meds and administration.
@@ -126,3 +139,14 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 - aplenc has Doi...10.3324/haematol.2019.220962
 *** fix 0000075 - cardinality
 *** re-add publication and has doi
+<<<<<<< HEAD
+=======
+* review structure as compared to midas data or others
+** re-add has duration, DONE
+* review structure as compared to midas data or others
+** hasDose
+** hmm. having duration in instances is not working well. Deal with instances asnd turn them to classes?
+** review other structures of inheritance.
+*** regimens being subclass of parts pr phases
+*** others?
+>>>>>>> 75876c8 (further cleanup)

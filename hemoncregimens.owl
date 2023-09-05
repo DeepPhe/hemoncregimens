@@ -27,6 +27,15 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HEMONC0000335 -->
+
+    <owl:AnnotationProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HEMONC0000335">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000003 -->
 
     <owl:AnnotationProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000003">
@@ -447,6 +456,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HEMONC0000332 -->
+
+    <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HEMONC0000332">
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#MedicationAdministration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The number of days during which a medication is administered.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDuration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HEMONC0000336 -->
+
+    <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HEMONC0000336">
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#MedicationAdministration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <HEMONC0000335>The amount of the medication that is given.</HEMONC0000335>
+        <rdfs:comment>note - the string is a shortcut. A more aproppriate version would have units and magnitude separately.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDose</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -1196,7 +1228,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1240,6 +1272,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000097 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000097">
+        <HEMONC0000335>Description of a biomarker - usually a genetic mutation - associated with a cancer. Examples would include HER2/NEU, Triple-Negative, etc. Evenutally should be replaced by a more formal grammar using an appropriate notations from ClinVar or something comparable.</HEMONC0000335>
         <rdfs:comment>TBD - modeling specific biomarkers</rdfs:comment>
         <rdfs:label xml:lang="en">Biomarker</rdfs:label>
     </owl:Class>
@@ -1312,18 +1345,8 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000133 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000133">
-        <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens/0000134"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000084"/>
         <rdfs:label xml:lang="en">Indeterminate Regimen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000134 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000134">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000084"/>
-        <rdfs:label xml:lang="en">Indefinite Regimen</rdfs:label>
     </owl:Class>
     
 
@@ -1331,6 +1354,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000135 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000135">
+        <HEMONC0000335>The stated goal of the anticancer treatment</HEMONC0000335>
         <rdfs:label xml:lang="en">Intent</rdfs:label>
     </owl:Class>
     
@@ -1384,6 +1408,7 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000150">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000135"/>
+        <HEMONC0000335>Treatment given when the intent is unclear is sometimes referred to as being given with borderline intent, following the concept of borderline surgical resectability</HEMONC0000335>
         <rdfs:label xml:lang="en">Borderline</rdfs:label>
     </owl:Class>
     
@@ -1404,6 +1429,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <HEMONC0000335>The clinical characterization of a patient&apos;s disease. Eventually should link somewhere appropriate to NCIt terms.</HEMONC0000335>
         <rdfs:comment>TODO: LINK DIRECTLY TO NCI -make &quot;hasCode&quot; work better.</rdfs:comment>
         <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
     </owl:Class>
@@ -2293,6 +2319,20 @@
         <HOR_0000001>10.3324/haematol.2019.220962</HOR_0000001>
         <rdfs:label xml:lang="en">COG_AAML_1031_Aplenc</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens/0000134">
+        <rdfs:label>Indefinite Regimen</rdfs:label>
+    </rdf:Description>
     
 
 
