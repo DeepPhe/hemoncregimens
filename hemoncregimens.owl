@@ -1220,6 +1220,48 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000042 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000042">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HEMONC0000335>In neuroblastoma,  a phase after consolidation</HEMONC0000335>
+        <rdfs:label xml:lang="en">PostConsolidation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000043 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000043">
+        <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HEMONC0000335>Treatment given before induction</HEMONC0000335>
+        <rdfs:label xml:lang="en">Preinduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000044 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000044">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <rdfs:label xml:lang="en">Pre-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000337 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000337">
@@ -1500,7 +1542,13 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000074 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000074">
-        <rdfs:comment>flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HEMONC0000335>A paper or pre-print from the scientific literature.</HEMONC0000335>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
     </owl:Class>
     
@@ -1657,51 +1705,11 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens/0000220 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000220">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000037"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">PostConsolidation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens/0000226 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000226">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000031"/>
         <rdfs:label xml:lang="en">InterimMaintenance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000230 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000230">
-        <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens/0000231"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">PreInduction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000231 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000231">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <rdfs:label xml:lang="en">PrePhase</rdfs:label>
     </owl:Class>
     
 
