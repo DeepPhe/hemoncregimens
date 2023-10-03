@@ -337,7 +337,6 @@
 
     <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregimens/0000145">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000010"/>
         <rdfs:label xml:lang="en">hasInflectionPoint</rdfs:label>
     </owl:ObjectProperty>
     
@@ -674,9 +673,9 @@
     <!-- http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
@@ -698,7 +697,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -714,9 +713,9 @@
     <!-- http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_2 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_2">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
@@ -732,7 +731,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -889,38 +888,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000004 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000004">
-        <HEMONC0000335>The type of cacner that has become neoplastic. Also referred to as morophology/behavior</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16681</HOR_0000003>
-        <rdfs:label xml:lang="en">Histology</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000005 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000005">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000004"/>
-        <HEMONC0000335>Carcinoma in situ</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2917</HOR_0000003>
-        <rdfs:label xml:lang="en">/2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000006 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000006">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000004"/>
-        <HEMONC0000335>Malignant, primary site</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158874</HOR_0000003>
-        <rdfs:label xml:lang="en">/3</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000007 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000007">
@@ -958,36 +925,6 @@
         <HEMONC0000335>The clinical characterization of a patient&apos;s disease. Eventually should link somewhere appropriate to NCIt terms.</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15220</HOR_0000003>
         <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000010 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000010">
-        <HEMONC0000335>A change in a patient&apos;s status with respect to treatment</HEMONC0000335>
-        <rdfs:label xml:lang="en">InflectionPoint</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000011 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000011">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000010"/>
-        <HEMONC0000335>&quot;Not responding to treatment. &quot; (NCIt)</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C38014</HOR_0000003>
-        <rdfs:label xml:lang="en">Refractory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000012 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000012">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000010"/>
-        <HEMONC0000335>Having reoccurred.</HEMONC0000335>
-        <rdfs:label xml:lang="en">Relapsed</rdfs:label>
     </owl:Class>
     
 
@@ -1066,67 +1003,12 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000021 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000021">
-        <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000022"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000020"/>
-        <HEMONC0000335>&quot;The preferred standard treatment for a particular condition.&quot; (NCIt)</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45792</HOR_0000003>
-        <rdfs:label xml:lang="en">First-Line</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000022 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000022">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000020"/>
-        <HEMONC0000335>&quot;The initial treatment for a disease.&quot; (NCIt)</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C155925</HOR_0000003>
-        <rdfs:label xml:lang="en">Upfront</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000023 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000023">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000020"/>
-        <HEMONC0000335>&quot;Performing a salvage procedure is the last resort. &quot; (NCIt)</HEMONC0000335>
-        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15359</HOR_0000003>
-        <rdfs:label xml:lang="en">Salvage</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000024 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000024">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000023"/>
         <HEMONC0000335>&quot;The second preferred therapy for a particular condition, used after first-line treatment fails or if a person cannot tolerate first-line drugs.&quot; (NCIt)</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54350</HOR_0000003>
         <rdfs:label xml:lang="en">Second-Line</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000025 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000025">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000020"/>
-        <HEMONC0000335>A line of therapy with a pre-planned stopping condition.</HEMONC0000335>
-        <rdfs:label>Determinate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000026 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000026">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000020"/>
-        <HEMONC0000335>A line of therapy without a specified stopping condition.</HEMONC0000335>
-        <rdfs:label>Indeterminate</rdfs:label>
     </owl:Class>
     
 
@@ -1194,7 +1076,13 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000031">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <HEMONC0000335>In some pediatric settings to indicate any phase that comes after some other phase</HEMONC0000335>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HEMONC0000335>Used n some pediatric settings to indicate any phase that comes after some other phase</HEMONC0000335>
         <HOR_0000003>http://hemoncregimens.org/hemoncregimens#HOR_0000031</HOR_0000003>
         <rdfs:label xml:lang="en">Continuation</rdfs:label>
     </owl:Class>
@@ -1218,7 +1106,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000227"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <HEMONC0000335>Treatment (usually chemotherapy and/or radiation) after definitive surgery</HEMONC0000335>
@@ -1232,6 +1120,8 @@
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000034">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000032"/>
         <HEMONC0000335>Chemotherapy and/or radiation given when subsequent definitive surgery is assumed.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15665</HOR_0000003>
+        <rdfs:comment>discuss with EVS?</rdfs:comment>
         <rdfs:label xml:lang="en">NeoAdjuvant</rdfs:label>
     </owl:Class>
     
@@ -1242,17 +1132,8 @@
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000035">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000032"/>
         <HEMONC0000335>Chemotherapy and/or chemoradiotherapy that is given both before and after a surgical procedure, usually according to the same or a very similar schedule.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28374</HOR_0000003>
         <rdfs:label xml:lang="en">PeriOperative</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000036 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000036">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <rdfs:comment>Definition needed!</rdfs:comment>
-        <rdfs:label xml:lang="en">Systemic</rdfs:label>
     </owl:Class>
     
 
@@ -1260,14 +1141,14 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000037 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000037">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <HEMONC0000335>&quot;Treatment that is given after initial therapy to kill any remaining cancer cells.&quot; (NCit)</HEMONC0000335>
+        <HEMONC0000335>Intensification of treatment designed to bolster a promising response to induction. Generally weaker than initial treatment with some very notable exceptions – autologous and allogeneic stem cell transplants. Treatment given after definitive chemoradiotherapy is also often termed consolidation.</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15679</HOR_0000003>
         <rdfs:label xml:lang="en">Consolidation</rdfs:label>
     </owl:Class>
@@ -1277,8 +1158,8 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000038 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000038">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
-        <HEMONC0000335>&quot;A repeat of the first two months of induction and consolidation chemotherapy in&quot; high-risk and very-high-risk ALL protocols with the goal of eliminating residual drug-resistant cells.&quot;</HEMONC0000335>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <HEMONC0000335>An intensification occurring after some gap in time, usually after consolidation. Also sometimes called late intensification</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C178270</HOR_0000003>
         <rdfs:label xml:lang="en">DelayedIntensification</rdfs:label>
     </owl:Class>
@@ -1288,7 +1169,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000039 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000039">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
@@ -1298,13 +1179,64 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <HEMONC0000335>&quot;The first choice of treatment for a particular type of cancer.&quot; (NCIt)</HEMONC0000335>
+        <HEMONC0000335>The initial therapy used to shrink a tumor.  Shorthand for “remission induction” which reflects the somewhat-current thinking that the only chance for cure for certain cancers is achieving a complete response to the first phase of therapy. Conversely, failure to achieve remission with induction therapy usually leads to the abandonment of that line of therapy. The waters are now considerably muddied by the emerging concept of minimal residual disease (MRD). Induction followed by surgery would retrospectively be considered neoadjuvant, even when the possibility of surgery was unclear at the time of induction,</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158876</HOR_0000003>
         <rdfs:comment>to be discussed with NCI EVS</rdfs:comment>
         <rdfs:label xml:lang="en">Induction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000040 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000040">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HEMONC0000335>Increasing the strength of a prior treatment – usually in pediatrics. Consolidation and intensification are mutually exclusive. When there is more than one intensification phase in a protocol, the first is also sometimes called early intensification</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C173105</HOR_0000003>
+        <rdfs:comment>Discuss with EVS?</rdfs:comment>
+        <rdfs:label xml:lang="en">Intensification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000041 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000041">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <HEMONC0000335>Treatment given as follow-on to the induction. Can be planned, conditional, or at any point after the induction. Loosely, salvage induction is often called re-induction, since the goal is to re-induce remission.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C158877</HOR_0000003>
+        <rdfs:comment>Discuss with EVS</rdfs:comment>
+        <rdfs:label xml:lang="en">ReInduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000337 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000337">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#LocoregionalAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:label xml:lang="en">MultimodalRegimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000341 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000341">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
+        <HEMONC0000335>Treatment intended to sustain gains from earlier treatments that have led to a desirable response such as complete or partial remission or stable disease. Maintenance is typically the last phase in a line.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15688</HOR_0000003>
+        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
     </owl:Class>
     
 
@@ -1550,13 +1482,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000145"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000152"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -1735,7 +1660,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000220 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000220">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
@@ -1747,50 +1672,11 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens/0000221 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000221">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
-        <rdfs:label xml:lang="en">Re-Induction</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens/0000226 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000226">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000227"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000031"/>
         <rdfs:label xml:lang="en">InterimMaintenance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000227 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000227">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000228 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000228">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000184"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Intensification</rdfs:label>
     </owl:Class>
     
 
@@ -1799,7 +1685,7 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000230">
         <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens/0000231"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000185"/>
@@ -1814,7 +1700,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000231 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000231">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:label xml:lang="en">PrePhase</rdfs:label>
     </owl:Class>
     
@@ -1840,13 +1726,13 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000236 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000236">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_1</rdfs:label>
@@ -1857,13 +1743,13 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000237 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000237">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000228"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</rdfs:label>
@@ -1987,7 +1873,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000312 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000312">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
         <rdfs:label xml:lang="en">Window</rdfs:label>
     </owl:Class>
     
