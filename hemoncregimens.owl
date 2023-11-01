@@ -178,7 +178,7 @@
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000077"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000074"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000048"/>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:label xml:lang="en">hasPublication</rdfs:label>
@@ -485,7 +485,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000001 -->
 
     <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000001">
-        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens/0000074"/>
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000048"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">hasDOI</rdfs:label>
     </owl:DatatypeProperty>
@@ -824,14 +824,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#EarlyStageFavorable -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#EarlyStageFavorable">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#Etoposide -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide">
@@ -861,22 +853,6 @@
         <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens/0000317"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#TreatmentExposure"/>
         <rdfs:label>Exposed</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Favorable -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Favorable">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Good -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Good">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
     </owl:Class>
     
 
@@ -1196,7 +1172,8 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000036">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000030"/>
-        <rdfs:comment>Definition needed!</rdfs:comment>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13310</HOR_0000003>
+        <rdfs:comment>&quot;Affecting an entire system.&quot; - as opposed to local therapies or interventions impacting only specific parts of the body</rdfs:comment>
         <rdfs:label xml:lang="en">Systemic</rdfs:label>
     </owl:Class>
     
@@ -1212,6 +1189,7 @@
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <HEMONC0000335>&quot;Treatment that is given after initial therapy to kill any remaining cancer cells.&quot; (NCit)</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C15679</HOR_0000003>
         <rdfs:label xml:lang="en">Consolidation</rdfs:label>
@@ -1264,6 +1242,8 @@
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <HEMONC0000335>Increasing the strength of a prior treatment – usually in pediatrics. Consolidation and intensification are mutually exclusive. When there is more than one intensification phase in a protocol, the first is also sometimes called early intensification.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C173105</HOR_0000003>
         <rdfs:label xml:lang="en">Intensification</rdfs:label>
     </owl:Class>
     
@@ -1295,6 +1275,7 @@
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <HEMONC0000335>Treatment given before induction.</HEMONC0000335>
         <rdfs:label xml:lang="en">PostConsolidation</rdfs:label>
         <rdfs:label xml:lang="en">PreInduction</rdfs:label>
     </owl:Class>
@@ -1305,6 +1286,9 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000044">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <HEMONC0000335>Treatment given before induction.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C168826</HOR_0000003>
+        <rdfs:comment>believe this is closeenough to the NCIT defintion for prephase chemotherapy treatment: &quot;A chemotherapy treatment administered prior to the definitive chemotherapy treatment.&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">PrePhase</rdfs:label>
     </owl:Class>
     
@@ -1337,6 +1321,91 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000048 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000048">
+        <HEMONC0000335>A  document describing a protocol and the study in which it was evaluated. Not necessarily peer-reviewed.</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19026</HOR_0000003>
+        <rdfs:comment>flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000049 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000049">
+        <HEMONC0000335>An assessment of a patient&apos;s prognosis</HEMONC0000335>
+        <rdfs:comment>revisit - C19015 seems close, but more quantiative and methods-associated.</rdfs:comment>
+        <rdfs:label>RiskStratification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000050 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000050">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>EarlyStageFavorable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000051 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000051">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>Favorable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000052 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000052">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>Good</rdfs:label>
+        <rdfs:label>Intermediate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000053 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000053">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>Poor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000054 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000054">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>UltraHighRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000055 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000055">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>Unfavorable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000056 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000056">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000049"/>
+        <rdfs:label>VeryHighRisk</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000338 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000338">
@@ -1362,15 +1431,8 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000342">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000036"/>
+        <HEMONC0000335>Used almost exclusively in neuroblastoma to refer to a phase after consolidation.</HEMONC0000335>
         <rdfs:label xml:lang="en">PostConsolidation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Intermediate -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Intermediate">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
     </owl:Class>
     
 
@@ -1431,27 +1493,11 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Poor -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Poor">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#Portion -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Portion">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens/0000084"/>
         <rdfs:comment>Needs clarification (12 July 2023)</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#RiskStratification -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#RiskStratification">
-        <rdfs:label>RiskStratification</rdfs:label>
     </owl:Class>
     
 
@@ -1500,36 +1546,12 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#UltraHighRisk -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#UltraHighRisk">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Unfavorable -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Unfavorable">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#Untreated -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Untreated">
         <owl:equivalentClass rdf:resource="http://hemoncregimens.org/hemoncregimens/0000316"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#TreatmentExposure"/>
         <rdfs:label>Untreated</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#VeryHighRisk -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#VeryHighRisk">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#RiskStratification"/>
     </owl:Class>
     
 
@@ -1619,15 +1641,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Protocol</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000074 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000074">
-        <rdfs:comment>flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</rdfs:comment>
-        <rdfs:label xml:lang="en">Publication</rdfs:label>
     </owl:Class>
     
 
@@ -2311,7 +2324,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens/0000183 -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens/0000183">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens/0000074"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000048"/>
         <HOR_0000001>10.3324/haematol.2019.220962</HOR_0000001>
         <rdfs:label xml:lang="en">COG_AAML_1031_Aplenc</rdfs:label>
     </owl:NamedIndividual>
