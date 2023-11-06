@@ -200,7 +200,7 @@
 
     <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregimens/0000096">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://hemoncregimens.org/hemoncregimens/0000095"/>
+        <rdfs:range rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
         <rdfs:label xml:lang="en">hasDose</rdfs:label>
     </owl:ObjectProperty>
     
@@ -519,7 +519,7 @@
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000096"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000095"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:comment xml:lang="en">unit: mg</rdfs:comment>
@@ -761,14 +761,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Asparaginase -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Asparaginase">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#AsparaginaseAdministration -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AsparaginaseAdministration">
@@ -793,14 +785,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Daunorubicin -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Daunorubicin">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#DaunorubicinAdministration -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#DaunorubicinAdministration">
@@ -808,18 +792,10 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000094"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#Daunorubicin"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">DaunorubicinAdministration</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Etoposide -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
     </owl:Class>
     
 
@@ -831,7 +807,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000094"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#Etoposide"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000074"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">EtoposideAdministration</rdfs:label>
@@ -1516,6 +1492,73 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000071 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000071">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+        <HEMONC0000335>&quot;An enzyme isolated from the bacterium Escherichia coli or the bacterium Erwinia carotovora with antileukemic activity. &quot;</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C286</HOR_0000003>
+        <rdfs:label>Asparaginase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000072 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000072">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+        <HEMONC0000335>An antimetabolite analogue of cytidine with a modified sugar moiety (arabinose instead of ribose).</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C408</HOR_0000003>
+        <rdfs:label xml:lang="en">Cytarabine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000073 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000073">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+        <HEMONC0000335>&quot;An anthracycline antineoplastic antibiotic with therapeutic effects similar to those of doxorubicin&quot;</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62091</HOR_0000003>
+        <rdfs:label>Daunorubicin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000074 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000074">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+        <HEMONC0000335>&quot;A semisynthetic derivative of podophyllotoxin, a substance extracted from the mandrake root Podophyllum peltatum.&quot;</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C491</HOR_0000003>
+        <rdfs:label>Etoposide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000075 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000075">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+        <HEMONC0000335>&quot;An anthracenedione antibiotic with antineoplastic activity.&quot;</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62050</HOR_0000003>
+        <rdfs:label xml:lang="en">Mitoxantrone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000076 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000076">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000064"/>
+        <HEMONC0000335>&quot;A quantity of an agent (such as substance or energy) administered, taken, or absorbed at one time.&quot;</HEMONC0000335>
+        <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25488</HOR_0000003>
+        <rdfs:comment>TBD  - modeling doses</rdfs:comment>
+        <rdfs:label xml:lang="en">Dose</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000338 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000338">
@@ -1563,15 +1606,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Mitoxantrone -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Mitoxantrone">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
-        <rdfs:label xml:lang="en">Mitoxantrone</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#MitoxantroneAdministration -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#MitoxantroneAdministration">
@@ -1579,7 +1613,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000094"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#Mitoxantrone"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1757,16 +1791,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens/0000095 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000095">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000064"/>
-        <rdfs:comment>TBD  - modeling doses</rdfs:comment>
-        <rdfs:label xml:lang="en">Dose</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens/0000133 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000133">
@@ -1904,15 +1928,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens/0000245 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000245">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
-        <rdfs:label xml:lang="en">Cytarabine</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens/0000248 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000248">
@@ -1920,7 +1935,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000094"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000245"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CytarabineAdministration-Chemo</rdfs:label>
@@ -1935,7 +1950,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000094"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens/0000245"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">CytarabineAdministration-CNS</rdfs:label>
