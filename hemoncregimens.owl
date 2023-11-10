@@ -597,51 +597,11 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasLocalTherapyMedicationAdministration"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -675,7 +635,7 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -715,7 +675,7 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_2">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1538,12 +1498,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000116"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000116"/>
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1557,6 +1511,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000116"/>
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens/0000116"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <HOR_0000003>https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_A_.28high-risk.29</HOR_0000003>
@@ -1888,6 +1848,53 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000102 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000102">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000095"/>
+        <HEMONC0000335>A regimens in a given phase that does not fit within a cycle sig.</HEMONC0000335>
+        <rdfs:comment>*NEEDS CLARIFICATION*</rdfs:comment>
+        <rdfs:label>Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000103 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000103">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasAnticancerMedicationAdministration"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasLocalTherapyMedicationAdministration"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#hasPhase"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <HOR_0000003>https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#Induction.2C_part_I</HOR_0000003>
+        <rdfs:label>AAML_1031_ARM_A_high-risk-induction_!</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000338 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000338">
@@ -1929,15 +1936,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Part -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#Part">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000095"/>
-        <rdfs:comment>*NEEDS CLARIFICATION*</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen">
@@ -1962,7 +1960,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000216">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2000,7 +1998,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000235">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2017,7 +2015,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000236">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2034,7 +2032,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000237">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#Part"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2071,8 +2069,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_10day100mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_10day100mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasDose>
         <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 100 mg/m2 IV over 1 to 30 minutes every 12 hours on days 1 to 10</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_10day100mg</rdfs:label>
@@ -2130,10 +2128,10 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age0_20mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age0_20mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasAge></hasAge>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasDose>
         <rdfs:comment xml:lang="en">Age: 0-0.99; Dose: 20</rdfs:comment>
@@ -2145,10 +2143,10 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age1_30ml -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age1_30ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasDose>
         <rdfs:comment xml:lang="en">Age: 1-1.99; Dose: 30</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_age1_30mg</rdfs:label>
@@ -2159,10 +2157,10 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age2_50ml -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age2_50ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasDose>
         <rdfs:comment xml:lang="en">Age: 2-2.99; Dose: 50</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_age2_50mg</rdfs:label>
@@ -2197,8 +2195,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day100mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day100mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasDose>
         <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 100 mg/m2 IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
         <rdfs:label xml:lang="en">Etoposide_5day100mg</rdfs:label>
@@ -2221,8 +2219,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day3.3mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day3.3mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 3.3 mg/kg IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
         <rdfs:label xml:lang="en">Etoposide_5day3.3mg</rdfs:label>
     </owl:NamedIndividual>
@@ -2268,8 +2266,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#10day3.3mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#10day3.3mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3</hasDose>
         <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 3.3 mg/kg IV over 1 to 30 minutes every 12 hours on days 1 to 10</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_10day3.3mg</rdfs:label>
@@ -2280,8 +2278,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#5day1.7mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#5day1.7mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</hasDose>
         <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 1.7 mg/kg IV over 1 to 15 minutes once per day on days 1, 3, 5</rdfs:comment>
         <rdfs:label xml:lang="en">Daunorubicin_5day1.7mg</rdfs:label>
@@ -2292,8 +2290,8 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#5day50mg -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#5day50mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasDose>
         <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 50 mg/m2 IV over 1 to 15 minutes once per day on days 1, 3, 5</rdfs:comment>
         <rdfs:label xml:lang="en">Daunorubicin_5day50mg</rdfs:label>
@@ -2304,10 +2302,10 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age3+_70ml -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age3+_70ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Induction_2"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#AAML_1031_ARM_A_high-risk_Intensification_1"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasDose>
         <rdfs:comment xml:lang="en">Age: 3+; Dose: 70</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_age3+_70mg</rdfs:label>
