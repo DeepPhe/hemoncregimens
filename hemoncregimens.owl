@@ -98,22 +98,6 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000123 -->
-
-    <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000123">
-        <rdfs:label xml:lang="en">hasDurationDays</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000124 -->
-
-    <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000124">
-        <rdfs:label xml:lang="en">hasDurationWeeks</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000131 -->
 
     <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000131">
@@ -491,20 +475,10 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000112 -->
 
     <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000112">
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                <owl:withRestrictions rdf:parseType="Collection">
-                    <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
-                    </rdf:Description>
-                    <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
-                    </rdf:Description>
-                </owl:withRestrictions>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:label>hasAge</rdfs:label>
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000068"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Minimum of the age range for a given medication administartion.</rdfs:comment>
+        <rdfs:label>hasMinimumAge</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -578,6 +552,39 @@
     <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000119">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="en">isDeterminate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000344 -->
+
+    <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000344">
+        <rdfs:subPropertyOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">hasDurationDays</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000345 -->
+
+    <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000345">
+        <rdfs:subPropertyOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">hasDurationWeeks</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000347 -->
+
+    <owl:DatatypeProperty rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000347">
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000068"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Upper limit of the age range for a given medication administartion</rdfs:comment>
+        <rdfs:label xml:lang="en">hasMaximumAge</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1473,20 +1480,11 @@
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000081 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000081">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
-        <HEMONC0000335>A treatment intended to fight cancer in a specific region of the body,.</HEMONC0000335>
-        <rdfs:label>AntiCancerLocal</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000082 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000082">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000068"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000090"/>
         <HEMONC0000335>A therapy that is intended to distribute to all parts of the body, typically via the bloodstream.</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13310</HOR_0000003>
         <rdfs:label>Systemic</rdfs:label>
@@ -1497,7 +1495,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000083 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000083">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000090"/>
         <rdfs:comment>Needs definition</rdfs:comment>
         <rdfs:label>TargetedTherapyAdministration</rdfs:label>
     </owl:Class>
@@ -1507,6 +1505,7 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000084 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000084">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000082"/>
         <HEMONC0000335>The delivery of a chemotherapeutic agent to a patient</HEMONC0000335>
         <rdfs:label>ChemotherapyAdministration</rdfs:label>
@@ -2033,6 +2032,51 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000346 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000346">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000112"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000113"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000347"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.99</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cytarabine-CNS_age_0_20mg</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen">
@@ -2149,7 +2193,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
         <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasAge></hasAge>
         <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasDose>
         <rdfs:comment xml:lang="en">Age: 0-0.99; Dose: 20</rdfs:comment>
         <rdfs:label xml:lang="en">Cytarabine_age0_20mg</rdfs:label>
@@ -2422,5 +2465,5 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
