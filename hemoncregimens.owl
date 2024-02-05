@@ -349,6 +349,7 @@
 
     <owl:ObjectProperty rdf:about="http://hemoncregimens.org/hemoncregiments#HOR_0000141">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000057"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000141"/>
@@ -1071,6 +1072,12 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000048 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000048">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <HEMONC0000335>A  document describing a protocol and the study in which it was evaluated. Not necessarily peer-reviewed.</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19026</HOR_0000003>
         <rdfs:comment>flesh out publication with the usual details as appropriate. sor some reasonnot saving with hasDOI as a data property..</rdfs:comment>
@@ -1156,6 +1163,12 @@
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000057 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000057">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000141"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <HEMONC0000335>A formal document developed by the sponsor of a study and may or may not be publicly available; for example, study protocols developed by pharmaceutical industry sponsors often have extensive redactions even when they are available as supplementary material to a published paper. Notably, regulatory agencies such as the FDA have access to full versions of study protocols. For the public, portions of study protocols are usually available at ClinicalTrials.gov or another clinical trials registry, and in one or more papers, may involve multiple treatment protocols.</HEMONC0000335>
         <rdfs:label xml:lang="en">StudyProtocol</rdfs:label>
     </owl:Class>
@@ -1270,6 +1283,12 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000068">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000130"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <HEMONC0000335>&quot;The administration of a drug to a patient.&quot;</HEMONC0000335>
         <HOR_0000003>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C128534</HOR_0000003>
         <rdfs:label>MedicationAdministration</rdfs:label>
@@ -1359,6 +1378,12 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000077">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HEMONC0000331"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000153"/>
@@ -1476,7 +1501,7 @@
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000080">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000068"/>
         <HEMONC0000335>A treatment specifically intended to fight cancer</HEMONC0000335>
-        <rdfs:label>AntiCancer</rdfs:label>
+        <rdfs:label>AntiCancerMedicaionAdministration</rdfs:label>
     </owl:Class>
     
 
@@ -1594,7 +1619,7 @@
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000068"/>
         <HEMONC0000335>A treatment intended to treat a specificregion of the body</HEMONC0000335>
         <rdfs:comment>might need to rethink how this relates to anticancerlocal and how this related to concepts like http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25388</rdfs:comment>
-        <rdfs:label>Local</rdfs:label>
+        <rdfs:label>LocalMedicationAdministration</rdfs:label>
     </owl:Class>
     
 
@@ -1696,7 +1721,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000118"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <HEMONC0000335>A repeating regimen that is intended to be delivered more than once.</HEMONC0000335>
@@ -2073,7 +2098,228 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Cytarabine-CNS_age_0_20mg</rdfs:label>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000348"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000349"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000350"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration-CNS_age_0_20mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000348 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000348">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000349"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000350"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration-CNS_age_3+_70mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000349 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000349">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000350"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration-CNS-age2_50mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000350 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000350">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration-CNS_age1_30mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000351 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000351">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000089"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000352"/>
+        <rdfs:label xml:lang="en">MitoxantroneAdministration_day3-6_12mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000352 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000352">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000089"/>
+        <rdfs:label xml:lang="en">MitoxantroneAdministration_day3-6_0.4mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000353 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000353">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000354"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000356"/>
+        <rdfs:label xml:lang="en">EtoposideAdministration_5day100mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000354 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000354">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000356"/>
+        <rdfs:label xml:lang="en">EtoposideAdministration_5day5mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000355 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000355">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000356"/>
+        <rdfs:label xml:lang="en">EtoposideAdministration_5day150mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000356 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000356">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
+        <rdfs:label xml:lang="en">EtoposideAdministration_5day3.3mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000359 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000359">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
+        <owl:disjointWith rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000360"/>
+        <rdfs:label xml:lang="en">DaunorubicinAdministration_5day50mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000360 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000360">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
+        <rdfs:label xml:lang="en">DaunorubicinAdministration_5day1.7mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000361 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000361">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_day1-2-8-9_100mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000362 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000362">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_4day1000mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000363 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000363">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_4day33mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000364 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000364">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_day1-2-8-9_3000mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000365 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000365">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_5day33mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000366 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000366">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_10day100mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000367 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000367">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_5day1000mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000368 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000368">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
+        <rdfs:label xml:lang="en">CytarabineAdministration_10day3.3mg</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000369 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000369">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:label xml:lang="en">ErwinazeAdministration_day2-9_830IU/m2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000370 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000370">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:label xml:lang="en">ErwinazeAdministration_day2-9_25000IU/m2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000371 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000371">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:label xml:lang="en">ElsparAdministration_day2-9_6000IU/m2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000372 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000372">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:label xml:lang="en">ElsparAdministration_day2-9_200IO/kg</rdfs:label>
     </owl:Class>
     
 
@@ -2082,6 +2328,12 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000095"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000131"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000148"/>
@@ -2128,300 +2380,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     
 
 
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_10day100mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_10day100mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 100 mg/m2 IV over 1 to 30 minutes every 12 hours on days 1 to 10</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_10day100mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_4day1000mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_4day1000mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 1000 mg/m2 IV over 1 to 3 hours every 12 hours on days 1 to 4</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_4day1000mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_4day33mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_4day33mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 33 mg/kg IV over 1 to 3 hours every 12 hours on days 1 to 4</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_4day33mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_5day1000mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_5day1000mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 1000 mg/m2 IV over 1 to 3 hours every 12 hours on days 1 to 5</rdfs:comment>
-        <rdfs:comment xml:lang="en">Cytarabine_5day1000mg</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_5day33mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_5day33mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 33 mg/kg IV over 1 to 3 hours every 12 hours on days 1 to 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_5day33mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age0_20mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age0_20mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasDose>
-        <rdfs:comment xml:lang="en">Age: 0-0.99; Dose: 20</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_age0_20mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age1_30ml -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age1_30ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasDose>
-        <rdfs:comment xml:lang="en">Age: 1-1.99; Dose: 30</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_age1_30mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age2_50ml -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age2_50ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasDose>
-        <rdfs:comment xml:lang="en">Age: 2-2.99; Dose: 50</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_age2_50mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_day1-2-8-9_100mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_day1-2-8-9_100mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 100 mg/kg IV over 3 hours every 12 hours on days 1, 2, 8, 9</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_day1-2-8-9_100mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_day1-2-8-9_3000mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_day1-2-8-9_3000mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 3000 mg/m2 IV over 3 hours every 12 hours on days 1, 2, 8, 9</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_day1-2-8-9_3000mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day100mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day100mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 100 mg/m2 IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Etoposide_5day100mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day150mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day150mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 150 mg/m2 IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Etoposide_5day150mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day3.3mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day3.3mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 3.3 mg/kg IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Etoposide_5day3.3mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Etoposide_5day5mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Etoposide_5day5mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 5 mg/kg IV over 60 to 120 minutes once per day on days 1 to 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Etoposide_5day5mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Mitoxantrone_day3-6_0.4mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Mitoxantrone_day3-6_0.4mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000089"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 0.4 mg/kg once per day on days 3 to 6.</rdfs:comment>
-        <rdfs:label xml:lang="en">Mitoxantrone_day3-6_0.4mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Mitoxantrone_day3-6_12mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Mitoxantrone_day3-6_12mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000089"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 12 mg/m2 IV over 15 to 30 minutes once per day on days 3 to 6</rdfs:comment>
-        <rdfs:label xml:lang="en">Mitoxantrone_day3-6_12mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#10day3.3mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#10day3.3mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000086"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.3</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 3.3 mg/kg IV over 1 to 30 minutes every 12 hours on days 1 to 10</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_10day3.3mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#5day1.7mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#5day1.7mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 1.7 mg/kg IV over 1 to 15 minutes once per day on days 1, 3, 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Daunorubicin_5day1.7mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#5day50mg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#5day50mg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000087"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 50 mg/m2 IV over 1 to 15 minutes once per day on days 1, 3, 5</rdfs:comment>
-        <rdfs:label xml:lang="en">Daunorubicin_5day50mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Cytarabine_age3+_70ml -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Cytarabine_age3+_70ml">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000103"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000104"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000105"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasDose>
-        <rdfs:comment xml:lang="en">Age: 3+; Dose: 70</rdfs:comment>
-        <rdfs:label xml:lang="en">Cytarabine_age3+_70mg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Elspar_day2-9_200IU/kg -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Elspar_day2-9_200IU/kg">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasDose>
-        <rdfs:comment xml:lang="en">BSA less than 0.6 m2: 200 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</rdfs:comment>
-        <rdfs:label xml:lang="en">Elspar_day2-9_200IU/kg</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Elspar_day2-9_6000IU/m2 -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Elspar_day2-9_6000IU/m2">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 6000 IU/m2 IM once per day on days 2 (at hour 42) &amp; 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</rdfs:comment>
-        <rdfs:label xml:lang="en">Elspar_day2-9_6000IU/m2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Erwinaze_day2-9_25000IU/m2 -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Erwinaze_day2-9_25000IU/m2">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</hasDose>
-        <rdfs:comment xml:lang="en">BSA 0.6 m2 or more: 25,000 IU/m2 IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</rdfs:comment>
-        <rdfs:label xml:lang="en">Erwinaze_day2-9_25000IU/m2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#Erwinaze_day2-9_830IU/m2 -->
-
-    <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens#Erwinaze_day2-9_830IU/m2">
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
-        <rdf:type rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000106"/>
-        <hasDose rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">830</hasDose>
-        <rdfs:comment>BSA less than 0.6 m2: 830 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</rdfs:comment>
-        <rdfs:label xml:lang="en">Erwinaze_day2-9_830IU/m2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://hemoncregimens.org/hemoncregimens/0000183 -->
 
     <owl:NamedIndividual rdf:about="http://hemoncregimens.org/hemoncregimens/0000183">
@@ -2462,9 +2420,31 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
             <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000017"/>
         </owl:members>
     </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000361"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000362"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000363"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000364"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000365"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000366"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000367"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000369"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000370"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000371"/>
+            <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000372"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
