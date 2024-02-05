@@ -1,35 +1,7 @@
-<<<<<<< HEAD
-* review structure as compared to midas data or others
-*** re-add has duration, has_dayas, etc.
-*** hmm. having duration in instances is not working well. Deal with instances asnd turn them to classes?
-** numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
-** what is the right scheme?
-** how to get everything to the right scheme?
-*** histology needs work
-* review other structures of inheritance.
-** regimens being subclass of parts pr phases
-** others?
-=======
-*populate definitions
-  - intent onwards
-  
-
-* histology needs work
-
-* numbering of nodes - some have numbers. some don't. can I fix that? - do I need this?
-** what is the right scheme?
-** how to get everything to the right scheme?
 
 
-* Fix instances
->>>>>>> 75876c8 (further cleanup)
-
-
-
-
-- populate the induction, intensification, etc. from  AAML with meds and administration.
 - is there any way to avoid explosuion of classes with medication adminsitration?
-
+- populate the induction, intensification, etc. from  AAML with meds and administration.
 - try to figure out how to best model the ordering of regimens
 - remove redundant information?
 - continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
