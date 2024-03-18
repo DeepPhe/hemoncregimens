@@ -1,13 +1,23 @@
 
 
-- is there any way to avoid explosuion of classes with medication adminsitration?
-  pre composed vs post composed
-  
-- populate the induction, intensification, etc. from  AAML with meds and administration.
-- continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
-- try to figure out how to best model the ordering of regimens
-- remove redundant information?
+*is there any way to avoid explosuion of classes with medication adminsitration?
+**pre composed vs post composed
+** document deisgn logic
+** implement details fort AAML
 
+* review line and treatment exposure
+
+* Look at medication sigs to implement key componets
+** dose
+** dose unit
+** schedule
+** frequency
+** Route
+** cyclesigs
+
+* continue modeling aaml https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#COG_AAML1031_arm_C_.28FLT3.2FITD.2B.29
+
+* Work on automation of scraping.
 
 
 
@@ -125,3 +135,4 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 *** regimens being subclass of parts pr phases
 *** others?
 >>>>>>> 75876c8 (further cleanup)
+- populate the induction, intensification, etc. from  AAML with meds and administration.
