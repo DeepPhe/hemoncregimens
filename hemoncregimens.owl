@@ -1832,7 +1832,6 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000101">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000100"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
         <HEMONC0000335>A combination of a systemic anticancer regimen and a locoregional 
 treatment regimen; thus a multimodal regimen must have both a systemic treatment component and a locoregional treatment component.</HEMONC0000335>
         <rdfs:label xml:lang="en">MultimodalRegimen</rdfs:label>
@@ -1855,8 +1854,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000103">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1933,8 +1931,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000104">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2005,8 +2002,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000105">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2089,8 +2085,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000106">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2167,8 +2162,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000107">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000136"/>
@@ -2197,8 +2191,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000108">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000136"/>
@@ -2215,8 +2208,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000109">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000136"/>
@@ -2233,8 +2225,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000110">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000102"/>
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen"/>
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000136"/>
@@ -2347,6 +2338,42 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000433 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000433">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000095"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000154"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000148"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000093"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000149"/>
+                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">SystemicAnticancerTreatmentRegimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000434 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000434">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000045"/>
+        <rdfs:label xml:lang="en">InterimMaintenance</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#PIZ_0000425 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#PIZ_0000425">
@@ -2400,41 +2427,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#PIZ_0000431">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
         <rdfs:label xml:lang="en">AsparaginaseErwiniaAdministration</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#SystematicAnticancerTreatmentRegimen">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000095"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000131"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000080"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000148"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregiments#HOR_0000149"/>
-                <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://hemoncregimens.org/hemoncregimens/0000226 -->
-
-    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens/0000226">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000045"/>
-        <rdfs:label xml:lang="en">InterimMaintenance</rdfs:label>
     </owl:Class>
     
 
