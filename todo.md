@@ -1,8 +1,10 @@
-* fix the PIZ - named classes.
 
 *is there any way to avoid explosuion of classes with medication adminsitration?
 **pre composed vs post composed
 ** document deisgn logic
+
+
+
 ** implement details fort AAML
 
 * review line and treatment exposure
@@ -136,3 +138,4 @@ Should specific phases (Inductino, etc. be individuals? Look at pizza?
 *** others?
 >>>>>>> 75876c8 (further cleanup)
 - populate the induction, intensification, etc. from  AAML with meds and administration.
+* fix the PIZ - named classes.
