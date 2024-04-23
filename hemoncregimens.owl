@@ -1964,7 +1964,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000103 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000103">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2041,7 +2040,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000104 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000104">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2112,7 +2110,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000105 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000105">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2195,7 +2192,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000106 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000106">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2272,7 +2268,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000107 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000107">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2301,7 +2296,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000108 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000108">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2318,7 +2312,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000109 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000109">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2335,7 +2328,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000110 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000110">
-        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000040"/>
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
