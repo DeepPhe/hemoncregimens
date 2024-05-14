@@ -715,6 +715,27 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_00000000000000000000 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_00000000000000000000">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
+                <owl:hasValue>once</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
+                <owl:hasValue>0.00-0.99 20; 1.00-1.99 30; 2.00-2.99 50; 3.00 or older  70</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CytarabineAdministration-CNS-Prophylaxis-once</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000002 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000002">
@@ -2003,6 +2024,20 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000157"/>
+                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000435"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
+                        <owl:hasValue>day 1 </owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000039"/>
@@ -2141,7 +2176,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000157"/>
-                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000435"/>
+                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_00000000000000000000"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
@@ -2214,11 +2249,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
-                        <owl:hasValue>days2&amp;9</owl:hasValue>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
-                        <owl:hasValue>0.60 m2 or more: 6000 IU/m2 IM once per day on days 2 (at hour 42) &amp; 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8); Less than 0.60 m2: 200 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</owl:hasValue>
+                        <owl:hasValue>days 2-9</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2232,11 +2263,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
-                        <owl:hasValue>day2&amp;9</owl:hasValue>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
-                        <owl:hasValue>0.60 m2 or more: 25,000 IU/m2 IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8); Less than 0.60 m2: 830 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</owl:hasValue>
+                        <owl:hasValue>day 2-9</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2500,6 +2527,12 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000436">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
+                <owl:hasValue>0.60 m2 or more: 6000 IU/m2 IM once per day on days 2 (at hour 42) &amp; 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8); Less than 0.60 m2: 200 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AsparaginaseElsparAdministration</rdfs:label>
     </owl:Class>
     
@@ -2509,6 +2542,12 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000437">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000085"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
+                <owl:hasValue>0.60 m2 or more: 25,000 IU/m2 IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8); Less than 0.60 m2: 830 IU/kg IM on Day 2 (at hour 42), Day 9 (at hour 42 after the start of the 1st dose of cytarabine on Day 8)</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">AsparaginaseErwiniaAdministration</rdfs:label>
     </owl:Class>
     
