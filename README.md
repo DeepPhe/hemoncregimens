@@ -1,6 +1,6 @@
 # Hemoncregimens
 
-An  OWL representation of regimens in [HenOnc](https://www.Hemonc.org).
+An  OWL representation of regimens in [HemOnc](https://www.Hemonc.org).
 
 This ontology is a work in progress. Errors and changes are to be expected. 
 
