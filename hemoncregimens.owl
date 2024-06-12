@@ -748,18 +748,6 @@
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000000">
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000088"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
-                <owl:hasValue>days1-5</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
-                <owl:hasValue>0.60 m2 or more: 150 mg/m2 IV over 60 to 120 minutes once per day,  Less than 0.60 m2: 5 mg/kg IV over 60 to 120 minutes once per day</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">EtoposideAdministration-HighDose</rdfs:label>
     </owl:Class>
     
@@ -1050,6 +1038,45 @@
     
 
 
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000025 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000025">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000042"/>
+                <owl:hasValue>mg/kg</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000047"/>
+                <owl:hasValue>IV</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000070"/>
+                <owl:hasValue>once per day</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
+                <owl:hasValue>over 60 to 120 minutes</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
+                <owl:hasValue>3.3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">EtoposideAdministrationLowDose-LowerBSA</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000026 -->
 
     <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000026">
@@ -1084,7 +1111,7 @@
                 <owl:hasValue>150</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">EtoposideAdministration-HigherBSA</rdfs:label>
+        <rdfs:label xml:lang="en">EtoposideAdministrationHighDose-HigherBSA</rdfs:label>
     </owl:Class>
     
 
@@ -2002,6 +2029,24 @@
         <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000042"/>
+                <owl:hasValue>mg/kg</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000047"/>
+                <owl:hasValue>IV</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000047"/>
+                <owl:hasValue>over 60 to 120 minutes</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000070"/>
                 <owl:hasValue>once per day</owl:hasValue>
             </owl:Restriction>
@@ -2012,7 +2057,7 @@
                 <owl:hasValue>5</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">EtoposideAdministration-lowerBSA</rdfs:label>
+        <rdfs:label xml:lang="en">EtoposideAdministrationHighDose-LowerBSA</rdfs:label>
     </owl:Class>
     
 
@@ -2123,7 +2168,14 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000154"/>
-                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000025"/>
+                                    <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000111"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
@@ -2255,7 +2307,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000154"/>
-                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000000"/>
+                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000016"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
@@ -2269,11 +2321,18 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000154"/>
-                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000016"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000026"/>
+                                    <rdf:Description rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000096"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
-                        <owl:hasValue>days1 to 5</owl:hasValue>
+                        <owl:hasValue>days 1 to 5</owl:hasValue>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2429,7 +2488,7 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000154"/>
-                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+                        <owl:someValuesFrom rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000096"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
@@ -2494,6 +2553,45 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
         </rdfs:subClassOf>
         <HOR_0000003>https://hemonc.org/wiki/Acute_myeloid_leukemia,_pediatric#Intensification.2C_part_II_2</HOR_0000003>
         <rdfs:label xml:lang="en">AAML_1031_ARM_C_FLT3_ITD_Intensification_2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://hemoncregimens.org/hemoncregimens#HOR_0000111 -->
+
+    <owl:Class rdf:about="http://hemoncregimens.org/hemoncregimens#HOR_0000111">
+        <rdfs:subClassOf rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000355"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000042"/>
+                <owl:hasValue>mg/m2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000047"/>
+                <owl:hasValue>IV</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000070"/>
+                <owl:hasValue>once per day</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000076"/>
+                <owl:hasValue>over 60 to 120 minutes</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
+                <owl:hasValue>100</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">EtoposideAdministrationLowDose-HigherBSA</rdfs:label>
     </owl:Class>
     
 
@@ -2566,12 +2664,6 @@ treatment regimen; thus a multimodal regimen must have both a systemic treatment
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000114"/>
                 <owl:hasValue>days1-5</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://hemoncregimens.org/hemoncregimens#HOR_0000442"/>
-                <owl:hasValue>0.60 m2 or more: 100 mg/m2 IV over 60 to 120 minutes once per day,  Less than 0.60 m2: 3.3 mg/kg IV over 60 to 120 minutes once per day</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">EtoposideAdministration-LowDose</rdfs:label>
